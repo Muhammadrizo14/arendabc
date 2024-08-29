@@ -1,5 +1,5 @@
 <template>
-  <div class="card w-[288.72px] ">
+  <div class="card w-[200px] md:w-[288.72px]">
     <div class="card__image relative">
       <div class="card_rate flex justify-between items-center absolute p-1 px-2 w-full">
         <div class="flex gap-1">
@@ -14,7 +14,7 @@
       </div>
       <img src="../public/img/card.png" alt="">
     </div>
-    <div class="card__content bg-white p-3">
+    <div class="card__content bg-white p-3 border-b border-r border-l border-custom-gray rounded-b-xl md:border-none">
       <h3 class="pb-1 text-base">ОСЗ, 1 930 кв.м</h3>
       <p class="text-[#999] text-sm pb-1">Василеостровский р-он</p>
       <div class="flex items-center gap-2 pb-2">

@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-brand-bright">
+  <div class="bg-brand-bright pb-20">
     <offer class="bg-none md:bg-[url('public/img/offer.png')]">
       <div class="offer__container py-6">
         <div class="bar py-1 px-3 md:p-3 bg-white rounded-md flex items-center gap-3 ">
@@ -49,7 +49,7 @@
         spaceBetween: 20,
       },
                 '420': {
-        slidesPerView: 2,
+        slidesPerView: 2.1,
         spaceBetween: 10,
       },
                 '500': {
@@ -101,7 +101,7 @@
         spaceBetween: 20,
       },
                 '420': {
-        slidesPerView: 2,
+        slidesPerView: 2.1,
         spaceBetween: 10,
       },
                 '500': {
@@ -295,13 +295,13 @@
       <div
           class=" bg-white mt-3 p-2 md:pb-6 md:pt-6 md:bg-transparent md:border-0 border border-custom-gray rounded-lg bg-(url('/img/aboutbg.png'))">
         <div class="flex items-center justify-between pb-3">
-          <h3 class="text-brand-grey">НОВЫЕ ОБЪЕКТЫ</h3>
+          <h3 class="text-brand-grey text-base">НОВЫЕ ОБЪЕКТЫ</h3>
           <AppButton class="hidden md:block">
-            Добавить объект
+            <p class="text-base">Добавить объект</p>
           </AppButton>
-          <AppButton class="block md:hidden py-1">
+          <AppButton class="block md:hidden py-1 px-2">
             <div class="flex items-center gap-2">
-              <p class="text-base">Показать всё</p>
+              <p class="text-sm">Показать всё</p>
               <img src="/img/icons/arrowright.png" alt="">
             </div>
           </AppButton>
@@ -317,13 +317,17 @@
                   slidesPerView: 1.2,
                   spaceBetween: 20,
                 },
-                '700': {
+                '451': {
                   slidesPerView: 2,
+                  spaceBetween: 20,
+                },
+                '550': {
+                  slidesPerView: 2.5,
                   spaceBetween: 20,
                 },
                 '886': {
                   slidesPerView: 3,
-                  spaceBetween: 10,
+                  spaceBetween: 20,
                 },
                 '1240': {
                   slidesPerView: 4,
