@@ -15,10 +15,13 @@
       <img src="../public/img/card.png" alt="">
     </div>
     <div class="card__content bg-white p-3">
-      <h3 class="pb-1">ОСЗ, 1 930 кв.м</h3>
-      <p class="text-brand-grey text-sm pb-1">Василеостровский р-он</p>
-      <p class="text-brand-blue text-base">122 000 кв.м.</p>
-      <p class="text-brand-green text-lg font-bold">1,500,000,000 ₽</p>
+      <h3 class="pb-1 text-base">ОСЗ, 1 930 кв.м</h3>
+      <p class="text-[#999] text-sm pb-1">Василеостровский р-он</p>
+      <div class="flex items-center gap-2 pb-2">
+        <img src="../public/img/object.png" alt="">
+        <p class="text-brand-blue text-base">122 000 кв.м.</p>
+      </div>
+      <p class="text-brand-green text-lg font-bold text-xl">1,500,000,000 ₽</p>
     </div>
   </div>
 </template>
