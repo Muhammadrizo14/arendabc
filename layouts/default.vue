@@ -1,12 +1,14 @@
 <template>
-  <div class="container mx-auto">
-    <AppHeader></AppHeader>
+  <div>
+    <AppHeader />
     <slot />
+    <AppFooter/>
   </div>
 </template>
 <script>
 import AppHeader from "../components/AppHeader";
+import AppFooter from "../components/AppFooter";
 export default {
-  components: {AppHeader}
+  components: {AppFooter, AppHeader}
 }
 </script>

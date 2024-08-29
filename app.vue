@@ -8,5 +8,4 @@
 
 
 <script setup lang="ts">
-const version = 1
 </script>
