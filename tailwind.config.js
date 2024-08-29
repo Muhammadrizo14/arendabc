@@ -28,7 +28,8 @@ module.exports = {
         'brand-bright': '#f5f5f5',
         'brand-grey': '#4B4B4B',
         'brand-blue': '#00B6F4',
-        'brand-dark': '#020202'
+        'brand-dark': '#020202',
+        'brand-input': '#EBEDF0'
       }
     },
   },

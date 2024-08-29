@@ -3,7 +3,7 @@
     <offer class="bg-none md:bg-[url('public/img/offer.png')]">
       <div class="offer__container py-6">
         <div class="bar py-1 px-3 md:p-3 bg-white rounded-md flex items-center gap-3 ">
-          <AppButton class="py-3 ">
+          <AppButton class="py-3" @click="filter=!filter">
             <p class="hidden sm:block">Фильтр</p>
             <svg class="block sm:hidden" width="12" height="13" viewBox="0 0 12 13" fill="none"
                  xmlns="http://www.w3.org/2000/svg">
@@ -27,6 +27,9 @@
             <p class="text-base md:text-xl">Поиск</p>
           </AppButton>
         </div>
+        <div class="relative z-50">
+          <Filter v-if="filter" class="absolute" />
+        </div>
         <div
             class="bg-white mt-3 p-2 md:pb-6 md:pt-6 md:bg-transparent md:border-0 border border-custom-gray rounded-lg">
           <div class="flex items-center justify-between pb-3">
@@ -45,34 +48,34 @@
               class="mySwiper"
               :breakpoints="{
                 '100': {
-        slidesPerView: 1.5,
-        spaceBetween: 20,
-      },
-                '420': {
-        slidesPerView: 2.1,
-        spaceBetween: 10,
-      },
-                '500': {
-        slidesPerView: 2.5,
-        spaceBetween: 20,
-      },
-      '600': {
-        slidesPerView: 3,
-        spaceBetween: 20,
-      },
-      '804': {
-        slidesPerView: 4,
-        spaceBetween: 20,
-      },
-      '980': {
-        slidesPerView: 5,
-        spaceBetween: 30,
-      },
-      '1240': {
-        slidesPerView: 6,
-        spaceBetween: 30,
-      },
-    }"
+                  slidesPerView: 1.5,
+                  spaceBetween: 20,
+                },
+                          '420': {
+                  slidesPerView: 2.1,
+                  spaceBetween: 10,
+                },
+                          '500': {
+                  slidesPerView: 2.5,
+                  spaceBetween: 20,
+                },
+                '600': {
+                  slidesPerView: 3,
+                  spaceBetween: 20,
+                },
+                '804': {
+                  slidesPerView: 4,
+                  spaceBetween: 20,
+                },
+                '980': {
+                  slidesPerView: 5,
+                  spaceBetween: 30,
+                },
+                '1240': {
+                  slidesPerView: 6,
+                  spaceBetween: 30,
+                },
+              }"
           >
             <swiper-slide v-for="home in sell">
               <OfferCard :title="home.title" :image="home.imageUrl"/>
@@ -352,6 +355,7 @@ import Offer from "../components/Offer/offer.vue";
 import AppButton from "../components/AppButton.vue";
 import OfferCard from "../components/Offer/OfferCard.vue";
 import Card from "../components/card.vue";
+import Filter from "../components/Filter.vue";
 
 
 import {Swiper, SwiperSlide} from 'swiper/vue';
@@ -368,6 +372,8 @@ const modules = ref([FreeMode])
 const search = ref('')
 const metro = ref('')
 const area = ref('')
+
+const filter = ref(false)
 
 const sell = ref([
   {
