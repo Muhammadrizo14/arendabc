@@ -73,5 +73,5 @@
 <script setup>
 import Offer from "../../components/Offer/offer";
 import Card from "../../components/card";
-const activeTab = ref(1)
+const activeTab = ref(0)
 </script>

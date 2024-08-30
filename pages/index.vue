@@ -28,7 +28,7 @@
           </AppButton>
         </div>
         <div class="relative z-50">
-          <Filter v-if="filter" class="absolute" />
+          <Filter v-if="filter" class="absolute"/>
         </div>
         <div
             class="bg-white mt-3 p-2 md:pb-6 md:pt-6 md:bg-transparent md:border-0 border border-custom-gray rounded-lg">
@@ -367,8 +367,6 @@ import 'swiper/css/pagination';
 import {FreeMode} from 'swiper/modules';
 
 const modules = ref([FreeMode])
-
-
 const search = ref('')
 const metro = ref('')
 const area = ref('')
