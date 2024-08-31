@@ -27,8 +27,42 @@ body {
   font-weight: 500;
   font-style: normal;
 }
+@font-face {
+  font-family: "Inter Light";
+  src: url("../fonts/Inter-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter ExtraBold";
+  src: url("../fonts/Inter-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter Black";
+  src: url("../fonts/Inter-Black.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
 
 
+.font-light {
+  font-family: "Inter Light", sans-serif;
+
+}
+
+.font-extrabold {
+  font-family: "Inter ExtraBold", sans-serif;
+}
+
+.font-black {
+  font-family: "Inter Black", sans-serif;
+}
+.font-medium {
+  font-family: "Inter Medium", sans-serif;
+}
 h1 {
   font-size: 36px;
 }

@@ -12,8 +12,10 @@
   "dependencies": {
     "@fancyapps/ui": "^5.0.36",
     "nuxt": "^3.13.0",
+    "sass": "^1.77.8",
     "swiper": "^11.1.11",
-    "vue": "latest"
+    "vue": "latest",
+    "vue-multiselect": "^3.0.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.20",

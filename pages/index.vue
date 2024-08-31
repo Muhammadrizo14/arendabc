@@ -5,15 +5,20 @@
         <div class="bar py-1 px-3 md:p-3 bg-white rounded-md flex items-center gap-3 ">
           <AppButton class="py-3" @click="filter=!filter">
             <p class="hidden sm:block">Фильтр</p>
-            <svg class="block sm:hidden" width="12" height="13" viewBox="0 0 12 13" fill="none"
+            <svg class="block sm:hidden" v-if="filter===false" width="12" height="13" viewBox="0 0 12 13" fill="none"
                  xmlns="http://www.w3.org/2000/svg">
               <path
                   d="M11.3333 0H0.666667C0.489856 0 0.320286 0.0720853 0.195262 0.200398C0.0702379 0.328711 0 0.50274 0 0.684202V2.20792L0.00533326 2.3605C0.0385388 2.81735 0.219709 3.24967 0.52 3.58864L3.33333 6.76402V12.3156C3.33331 12.424 3.35839 12.5309 3.4065 12.6274C3.45461 12.7239 3.52438 12.8073 3.61006 12.8708C3.69574 12.9342 3.79488 12.9758 3.8993 12.9922C4.00373 13.0085 4.11045 12.9992 4.21067 12.9649L8.21067 11.5965L8.28267 11.5671C8.39748 11.512 8.49458 11.4243 8.56259 11.3145C8.63061 11.2048 8.66671 11.0773 8.66667 10.9472V6.44108L11.414 3.62216C11.5999 3.43144 11.7473 3.20499 11.8479 2.95575C11.9484 2.7065 12.0001 2.43936 12 2.1696V0.684202C12 0.50274 11.9298 0.328711 11.8047 0.200398C11.6797 0.0720853 11.5101 0 11.3333 0Z"
                   fill="white"/>
             </svg>
+            <svg class="block sm:hidden" width="13" height="13"  v-else viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M13 1L1 13" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M1 1L13 13" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+
           </AppButton>
           <div class="flex items-center w-full">
-            <input class="w-full py-3 outline-none h-full  text-2xl" type="text" placeholder="поиск" v-model="search">
+            <input class="w-full py-3 outline-none h-full text-base md:text-2xl" type="text" placeholder="поиск" v-model="search">
             <svg @click="search=''" class="block sm:hidden" width="20" height="20" viewBox="0 0 14 14" fill="none"
                  xmlns="http://www.w3.org/2000/svg">
               <path d="M13 1L1 13" stroke="#8F8F8F" stroke-opacity="0.79" stroke-linecap="round"
@@ -27,7 +32,7 @@
             <p class="text-base md:text-xl">Поиск</p>
           </AppButton>
         </div>
-        <div class="relative z-50">
+        <div class="relative z-20">
           <Filter v-if="filter" class="absolute"/>
         </div>
         <div
@@ -137,7 +142,6 @@
       </div>
     </offer>
     <section class="location container py-3 md:py-6 md:bg-[url('img/map.png')] bg-cover bg-no-repeat">
-
       <div
           class="metro bg-white mt-3 p-2 md:pb-6 md:pt-6 md:bg-transparent md:border-0 border border-custom-gray rounded-lg">
         <h3 class="pb-3 text-base">РЯДОМ С <span>МЕТРО</span></h3>
@@ -271,8 +275,8 @@
       <div class="container rounded flex items-center gap-6">
         <img class="hidden lg:block" src="../public/img/about.png" alt="">
         <div
-            class="bg-white mt-3 p-2 md:pb-6 md:pt-6 md:bg-transparent md:border-0 border border-custom-gray rounded-lg bg-(url('/img/aboutbg.png'))">
-          <h2 class="pb-3  text-3xl text-xl md:text-3xl">Аренда коммерческой недвижимости на <span>ARENDA</span><span
+            class="mt-3 p-2 md:pb-6 md:pt-6 md:bg-transparent md:border-0 border border-custom-gray rounded-lg bg-(url('public/img/offer.png')) bg-cover bg-white">
+          <h2 class="pb-3 text-brand-grey text-3xl text-xl md:text-3xl">Аренда коммерческой недвижимости на <span>ARENDA</span><span
               class="text-brand-green">BC</span></h2>
           <p class="pb-4 text-brand-grey">
             Большинство частных предпринимателей в какой-то момент своей деятельности сталкиваются с необходимостью
@@ -298,7 +302,7 @@
       <div
           class=" bg-white mt-3 p-2 md:pb-6 md:pt-6 md:bg-transparent md:border-0 border border-custom-gray rounded-lg bg-(url('/img/aboutbg.png'))">
         <div class="flex items-center justify-between pb-3">
-          <h3 class="text-brand-grey text-base">НОВЫЕ ОБЪЕКТЫ</h3>
+          <h3 class="text-brand-grey md:text-2xl font-extrabold text-xl">НОВЫЕ ОБЪЕКТЫ</h3>
           <AppButton class="hidden md:block">
             <p class="text-base">Добавить объект</p>
           </AppButton>
