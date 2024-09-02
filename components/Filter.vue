@@ -13,6 +13,14 @@ const areas = ref(
     ]
 )
 
+const selectedType = ref([])
+
+const types = ref(
+    [
+      '1', '3', '4', '2', '3'
+    ]
+)
+
 
 const selectedMetro = ref([])
 
@@ -69,10 +77,10 @@ const rent = ref([
       <div class="w-1/5">
         <p class="text-base">Тип</p>
       </div>
-      <div class="flex items-center gap-2 w-4/5">
+      <div class="flex items-center gap-2 w-5/5 md:w-4/5">
         <OfferCard class="hidden md:flex" v-for="home in rent" :image="home.imageUrl" :title="home.title"/>
-        <div class="block md:hidden">
-          <multiselect v-model="selectedArea" :options="areas" :allowEmpty="false" :multiple="true" placeholder="Выбрать район"  :searchable="false">
+        <div class="block md:hidden w-full">
+          <multiselect v-model="selectedType" :options="types" :allowEmpty="false" :multiple="true" placeholder="Выбрать район"  :searchable="false">
             <template #selection="{ values, search, isOpen }">
         <span class="multiselect__single"
               v-if="values.length"
@@ -105,10 +113,10 @@ const rent = ref([
       </div>
     </div>
     <div class="category pt-6 md:p-4 flex flex-col md:flex-row md:items-center ">
-      <div class="w-1/5 pb-2 md:pb-0">
+      <div class="w-1/5 pb-2 md:pb-0 ">
         <p class="text-base">Районы</p>
       </div>
-      <div class="flex items-center gap-2 w-4/5">
+      <div class="flex items-center gap-2 w-5/5 md:w-4/5">
         <multiselect v-model="selectedArea" :searchable="false" :options="areas" :allowEmpty="false" :multiple="true" placeholder="Выбрать район">
           <template #selection="{ values, search, isOpen }">
         <span class="multiselect__single"
@@ -122,7 +130,7 @@ const rent = ref([
       <div class="w-1/5 pb-2 md:pb-0">
         <p class="text-base">Метро</p>
       </div>
-      <div class="flex items-center gap-2 w-4/5">
+      <div class="flex items-center gap-2 w-5/5 md:w-4/5">
         <multiselect  v-model="selectedMetro" :searchable="false" :options="metros" :allowEmpty="false" placeholder="Выбрать метро." ></multiselect>
       </div>
     </div>
@@ -130,19 +138,19 @@ const rent = ref([
       <div class="md:w-1/5 pb-2 md:pb-0 w-full">
         <p class="text-base">Произвольный текст</p>
       </div>
-      <div class="flex items-center gap-2 w-4/5">
-        <input type="text" placeholder="поиск" class="bg-brand-input p-2 rounded w-[304px]">
+      <div class="flex items-center gap-2 w-5/5 md:w-4/5">
+        <input type="text" placeholder="поиск" class="bg-brand-input p-2 rounded w-full md:w-[304px]">
       </div>
     </div>
-    <div class="w-full bg-brand-input h-px"></div>
+    <div class="w-full bg-brand-input h-px my-2"></div>
     <div class="category flex items-center p-4">
       <div class="md:w-1/5">
       </div>
-      <div class="flex items-center gap-2 w-full md:w-4/5 justify-between">
+      <div class="flex items-center gap-2 w-full md:w-4/5 justify-between md:justify-start">
         <AppButton class="md:py-1 sm:px-5">
           Применить
         </AppButton>
-        <AppButton class="sm:bg-brand-input sm:text-black md:py-1 sm:px-5">
+        <AppButton class="min-[0px]:bg-brand-input min-[0px]:text-black md:py-1 sm:px-5">
           Сбросить
         </AppButton>
       </div>
@@ -154,6 +162,9 @@ const rent = ref([
 <style lang="scss">
 .multiselect {
   width: 300px;
+  @media (max-width: 768px) {
+    width: 100%;
+  }
   &__tags {
     background: #f5f5f5;
     .multiselect__single {

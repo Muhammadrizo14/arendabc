@@ -63,6 +63,11 @@ body {
 .font-medium {
   font-family: "Inter Medium", sans-serif;
 }
+
+.font-bold {
+  font-family: "Inter Bold", sans-serif;
+}
+
 h1 {
   font-size: 36px;
 }
@@ -100,3 +105,4 @@ a {
     font-size: 16px;
   }
 }
+

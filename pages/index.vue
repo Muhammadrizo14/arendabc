@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-brand-bright pb-20">
+  <div class="bg-brand-bright">
     <offer class="bg-none md:bg-[url('public/img/offer.png')]">
       <div class="offer__container py-6">
         <div class="bar py-1 px-3 md:p-3 bg-white rounded-md flex items-center gap-3 ">
