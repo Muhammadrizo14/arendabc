@@ -47,7 +47,7 @@
         </div>
       </div>
       <div class="relative z-50">
-        <Filter v-if="filter" class="absolute"/>
+        <Filter v-if="filter" class="absolute"  @updateFilter="filter = false"/>
       </div>
     </offer>
     <section class="stats bg-brand-bright">
@@ -67,6 +67,8 @@
             <p>Карта+Карточки</p>
           </div>
         </div>
+        <multiselect v-model="value" :options="options" :allowEmpty="false" :searchable="false" :show-labels="false" :preselectFirst="true"
+                     placeholder="Сортировка"></multiselect>
       </div>
     </section>
     <section class="result bg-brand-bright md:pb-6">
@@ -103,8 +105,12 @@
 <script setup>
 import Offer from "../../components/Offer/offer";
 import Card from "../../components/card";
+import Multiselect from 'vue-multiselect'
 
 const activeTab = ref(0)
 const filter = ref(false)
 const search = ref('')
+const options = ref(['Сначала недорогие', 'Сначала дорогие', 'Сначала новые',])
+const value = ref(options[0])
+
 </script>

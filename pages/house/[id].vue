@@ -25,12 +25,14 @@
       <div class="container flex gap-6   flex-col md:flex-row">
         <div class="flex flex-col  items-center w-2/2 md:w-3/5">
 
-          <div class="w-full">
+          <div class="w-full max-h-[500px]">
 
             <swiper
                 :style="{
       '--swiper-navigation-color': '#fff',
       '--swiper-pagination-color': '#fff',
+      'height': '400px',
+      'border-radius': '12px'
     }"
                 :spaceBetween="10"
                 :navigation="true"
@@ -49,12 +51,10 @@
                     </div>
                   </div>
                 </div>
-                <a href="/img/carousel.png" data-fancybox="gallery">
-                  <img
-                      src="/img/carousel.png"
-                      alt="Nature"
-                  />
-                </a>
+                <img
+                    src="/img/carousel.png"
+                    alt="image"
+                />
               </swiper-slide>
               <swiper-slide>
                 <div class="relative">
@@ -67,12 +67,10 @@
                     </div>
                   </div>
                 </div>
-                <a href="/img/carousel.png" data-fancybox="gallery">
-                  <img
-                      src="/img/carousel.png"
-                      alt="Nature"
-                  />
-                </a>
+                <img
+                    src="/img/carousel.png"
+                    alt="image"
+                />
               </swiper-slide>
               <swiper-slide>
                 <div class="relative">
@@ -85,33 +83,31 @@
                     </div>
                   </div>
                 </div>
-                <a href="/img/carousel.png" data-fancybox="gallery">
-                  <img
-                      src="/img/carousel.png"
-                      alt="Nature"
-                  />
-                </a>
+                <img
+                    src="/img/carousel.png"
+                    alt="image"
+                />
               </swiper-slide>
             </swiper>
-            <swiper
-                @swiper="setThumbsSwiper"
-                :spaceBetween="10"
-                :slidesPerView="6"
-                :freeMode="true"
-                :watchSlidesProgress="true"
-                :modules="modules"
-                class="mythumb"
-            >
-              <swiper-slide>
-                <img src="../../public/img/carousel.png"/>
-              </swiper-slide>
-              <swiper-slide>
-                <img src="../../public/img/carousel.png"/>
-              </swiper-slide>
-              <swiper-slide>
-                <img src="../../public/img/carousel.png"/>
-              </swiper-slide>
-            </swiper>
+            <!--            <swiper-->
+            <!--                @swiper="setThumbsSwiper"-->
+            <!--                :spaceBetween="10"-->
+            <!--                :slidesPerView="6"-->
+            <!--                :freeMode="true"-->
+            <!--                :watchSlidesProgress="true"-->
+            <!--                :modules="modules"-->
+            <!--                class="mythumb"-->
+            <!--            >-->
+            <!--              <swiper-slide>-->
+            <!--                <img src="../../public/img/carousel.png"/>-->
+            <!--              </swiper-slide>-->
+            <!--              <swiper-slide>-->
+            <!--                <img src="../../public/img/carousel.png"/>-->
+            <!--              </swiper-slide>-->
+            <!--              <swiper-slide>-->
+            <!--                <img src="../../public/img/carousel.png"/>-->
+            <!--              </swiper-slide>-->
+            <!--            </swiper>-->
 
           </div>
           <div class="py-6 px-3 bg-white border mt-3 rounded-lg text-brand-grey w-full">
@@ -136,7 +132,8 @@
               <p>Бухарестская</p>
               <p>17 мин.</p>
             </div>
-            <p class="py-3 font-light w-full  " :class="hideInfo ? 'max-[728px]:truncate max-[768px]:text-wrap max-[768px]:h-[110px]' : ''">
+            <p class="py-3 font-light w-full  "
+               :class="hideInfo ? 'max-[728px]:truncate max-[768px]:text-wrap max-[768px]:h-[110px]' : ''">
               Предлагаем Вашему вниманию объект коммерческой недвижимости общей площадью более 22000 м2. Здание
               расположено на земельном участке площадью 5 Га, который имеет категорию земель населенных пунктов и
               предназначен для размещения объектов розничной торговли.
@@ -149,7 +146,8 @@
               благодаря своей площади и удобному расположению.
             </p>
 
-            <p class="text-brand-blue font-medium cursor-pointer block md:hidden" @click="hideInfo=!hideInfo">{{hideInfo ? 'Подробнее' : 'Скрыть'}}</p>
+            <p class="text-brand-blue font-medium cursor-pointer block md:hidden" @click="hideInfo=!hideInfo">
+              {{ hideInfo ? 'Подробнее' : 'Скрыть' }}</p>
 
             <div class="items-center justify-between pt-5 hidden md:flex">
               <p class="text-base font-bold">№ 1234568</p>
@@ -271,23 +269,13 @@ import {Swiper, SwiperSlide} from 'swiper/vue';
 
 import {FreeMode, Navigation, Thumbs} from 'swiper/modules';
 
-const modules = ref([FreeMode, Navigation, Thumbs])
-import {onMounted} from 'vue';
-import {Fancybox} from '@fancyapps/ui';
-
 import 'swiper/css';
 import 'swiper/css/free-mode';
 import 'swiper/css/navigation';
 import 'swiper/css/thumbs';
 
 
-onMounted(() => {
-  Fancybox.bind("[data-fancybox]", {});
-});
-const setThumbsSwiper = (swiper) => {
-  thumbsSwiper.value = swiper;
-};
-
+const modules = ref([FreeMode, Navigation, Thumbs])
 
 const phone = ref(false)
 const email = ref(false)

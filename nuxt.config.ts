@@ -10,6 +10,5 @@ export default defineNuxtConfig({
     },
   },
   plugins: [
-    '~/plugins/fancybox.js'
   ],
 })

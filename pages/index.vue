@@ -33,7 +33,7 @@
           </AppButton>
         </div>
         <div class="relative z-20">
-          <Filter v-if="filter" class="absolute"/>
+          <Filter v-if="filter" class="absolute" @updateFilter="filter = false"/>
         </div>
         <div
             class="bg-white mt-3 p-2 md:pb-6 md:pt-6 md:bg-transparent md:border-0 border border-custom-gray rounded-lg">

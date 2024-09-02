@@ -1,7 +1,7 @@
 <template>
   <footer class="bg-brand-dark py-6 text-white hidden lg:block">
     <div class="container">
-      <div class="nav flex items-start justify-between border-b-brand-blue border-b-2 pb-3">
+      <div class="nav flex items-start justify-between border-b-brand-blue border-b-2 pb-6">
         <img class="w-[186.73px] self-center" src="../public/img/about.png" alt="logo">
         <div>
           <h3 class="text-xl pb-3">НАВИГАЦИЯ</h3>
@@ -59,7 +59,7 @@
           </ul>
         </div>
       </div>
-      <div class="pt-3 flex justify-between">
+      <div class="pt-3 flex justify-between pt-6">
         <div>
           <p  class="font-medium text-lg">Портал для поиска коммерческой недвижимости</p>
           <div class="flex items-center gap-3">

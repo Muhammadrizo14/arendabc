@@ -1,4 +1,5 @@
 <script setup>
+
 import Multiselect from 'vue-multiselect'
 import OfferCard from "./Offer/OfferCard";
 import AppButton from "./AppButton";
@@ -53,6 +54,8 @@ const rent = ref([
   },
 
 ])
+
+const emit = defineEmits(['updateFilter']);
 </script>
 
 <template>
@@ -80,7 +83,7 @@ const rent = ref([
       <div class="flex items-center gap-2 w-5/5 md:w-4/5">
         <OfferCard class="hidden md:flex" v-for="home in rent" :image="home.imageUrl" :title="home.title"/>
         <div class="block md:hidden w-full">
-          <multiselect v-model="selectedType" :options="types" :allowEmpty="false" :multiple="true" placeholder="Выбрать район"  :searchable="false">
+          <multiselect v-model="selectedType"  :show-labels="false" :options="types" :allowEmpty="false" :multiple="true" placeholder="Выбрать район"  :searchable="false">
             <template #selection="{ values, search, isOpen }">
         <span class="multiselect__single"
               v-if="values.length"
@@ -117,7 +120,7 @@ const rent = ref([
         <p class="text-base">Районы</p>
       </div>
       <div class="flex items-center gap-2 w-5/5 md:w-4/5">
-        <multiselect v-model="selectedArea" :searchable="false" :options="areas" :allowEmpty="false" :multiple="true" placeholder="Выбрать район">
+        <multiselect v-model="selectedArea" :searchable="false"  :show-labels="false" :options="areas" :allowEmpty="false" :multiple="true" placeholder="Выбрать район">
           <template #selection="{ values, search, isOpen }">
         <span class="multiselect__single"
               v-if="values.length"
@@ -131,7 +134,7 @@ const rent = ref([
         <p class="text-base">Метро</p>
       </div>
       <div class="flex items-center gap-2 w-5/5 md:w-4/5">
-        <multiselect  v-model="selectedMetro" :searchable="false" :options="metros" :allowEmpty="false" placeholder="Выбрать метро." ></multiselect>
+        <multiselect  v-model="selectedMetro"  :show-labels="false" :searchable="false" :options="metros" :allowEmpty="false" placeholder="Выбрать метро." ></multiselect>
       </div>
     </div>
     <div class="category  pt-6 md:p-4 flex flex-col md:flex-row md:items-center">
@@ -147,10 +150,10 @@ const rent = ref([
       <div class="md:w-1/5">
       </div>
       <div class="flex items-center gap-2 w-full md:w-4/5 justify-between md:justify-start">
-        <AppButton class="md:py-1 sm:px-5">
+        <AppButton class="md:py-1 sm:px-5" @click="emit('updateFilter')">
           Применить
         </AppButton>
-        <AppButton class="min-[0px]:bg-brand-input min-[0px]:text-black md:py-1 sm:px-5">
+        <AppButton class="min-[0px]:bg-brand-input min-[0px]:text-black md:py-1 sm:px-5" @click="emit('updateFilter')">
           Сбросить
         </AppButton>
       </div>
