@@ -53,17 +53,17 @@
     <section class="stats bg-brand-bright">
       <div class="container flex items-start justify-between py-6 flex-col sm:flex-row sm:items-center">
         <h3>НАЙДЕНО <span>245 ОБЪЕКТОВ</span></h3>
-        <div class="flex items-center">
-          <div @click="activeTab = 0" :class="activeTab === 0 ? 'bg-brand-blue text-white' : 'bg-white text-black'"
-               class="cursor-pointer p-1 px-4 rounded-l-lg">
+        <div class="flex items-center py-3 md:py-0">
+          <div @click="activeTab = 0" :class="activeTab === 0 ? 'bg-[#53B3F8] text-white' : 'bg-white text-black'"
+               class="cursor-pointer p-1.5 px-4 rounded-l-lg">
             <p>Карточки</p>
           </div>
-          <div @click="activeTab = 1" :class="activeTab === 1 ? 'bg-brand-blue text-white' : 'bg-white text-black'"
-               class="cursor-pointer p-1 px-4">
+          <div @click="activeTab = 1" :class="activeTab === 1 ? 'bg-[#53B3F8] text-white' : 'bg-white text-black'"
+               class="cursor-pointer p-1.5 px-4">
             <p>Карта</p>
           </div>
-          <div @click="activeTab = 2" :class="activeTab === 2 ? 'bg-brand-blue text-white' : 'bg-white text-black'"
-               class="cursor-pointer p-1 px-4 rounded-r-lg">
+          <div @click="activeTab = 2" :class="activeTab === 2 ? 'bg-[#53B3F8] text-white' : 'bg-white text-black'"
+               class="cursor-pointer p-1.5 px-4 rounded-r-lg">
             <p>Карта+Карточки</p>
           </div>
         </div>

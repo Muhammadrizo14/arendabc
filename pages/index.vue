@@ -1,7 +1,7 @@
 <template>
   <div class="bg-brand-bright">
     <offer class="bg-none md:bg-[url('public/img/offer.png')]">
-      <div class="offer__container py-6">
+      <div class="offer__container py-16">
         <div class="bar py-1 px-3 md:p-3 bg-white rounded-md flex items-center gap-3 ">
           <AppButton class="py-3" @click="filter=!filter">
             <p class="hidden sm:block">Фильтр</p>
@@ -36,8 +36,8 @@
           <Filter v-if="filter" class="absolute" @updateFilter="filter = false"/>
         </div>
         <div
-            class="bg-white mt-3 p-2 md:pb-6 md:pt-6 md:bg-transparent md:border-0 border border-custom-gray rounded-lg">
-          <div class="flex items-center justify-between pb-3">
+            class="bg-white mt-3 py-2 p-2 md:p-0 md:pb-6 md:pt-6 md:bg-transparent md:border-0 border border-custom-gray rounded-lg">
+          <div class="flex items-center justify-between pl-2 pb-3">
             <h3 class="text-black text-base md:text-white">ПРОДАЖА</h3>
             <AppButton class="py-1  block md:hidden">
               <div class="flex items-center gap-3">
@@ -74,11 +74,11 @@
                 },
                 '980': {
                   slidesPerView: 5,
-                  spaceBetween: 30,
+                  spaceBetween: 25,
                 },
                 '1240': {
                   slidesPerView: 6,
-                  spaceBetween: 30,
+                  spaceBetween: 25,
                 },
               }"
           >
@@ -88,7 +88,7 @@
           </swiper>
         </div>
         <div
-            class="bg-white mt-3 p-2 md:pb-6 md:pt-6 md:bg-transparent md:border-0 border border-custom-gray rounded-lg">
+            class="bg-white mt-3 p-2 md:p-0 py-2  pl-2 md:pb-6 md:pt-6 md:bg-transparent md:border-0 border border-custom-gray rounded-lg">
           <div class="flex items-center justify-between pb-3">
             <h3 class="text-black text-base md:text-white">АРЕНДА</h3>
             <AppButton class="py-1  block md:hidden">
@@ -126,11 +126,11 @@
       },
       '980': {
         slidesPerView: 5,
-        spaceBetween: 30,
+        spaceBetween: 25,
       },
       '1240': {
         slidesPerView: 6,
-        spaceBetween: 30,
+        spaceBetween: 25,
       },
     }"
           >
@@ -143,7 +143,7 @@
     </offer>
     <section class="location container py-3 md:py-6 md:bg-[url('img/map.png')] bg-cover bg-no-repeat">
       <div
-          class="metro bg-white mt-3 p-2 md:pb-6 md:pt-6 md:bg-transparent md:border-0 border border-custom-gray rounded-lg">
+          class="metro bg-white mt-3 p-2 md:p-0 py-2 md:pb-6 md:pt-6 md:bg-transparent md:border-0 border border-custom-gray rounded-lg">
         <h3 class="pb-3 text-base">РЯДОМ С <span>МЕТРО</span></h3>
         <div class="columns-3 items-start pb-3 hidden md:block ">
           <div class="flex flex-col gap-2">

@@ -25,8 +25,17 @@
       <div class="container flex gap-6   flex-col md:flex-row">
         <div class="flex flex-col  items-center w-2/2 md:w-3/5">
 
-          <div class="w-full max-h-[500px]">
-
+          <div class="w-full max-h-[500px] ">
+            <div class="relative z-50">
+              <div class="absolute flex gap-2 left-3 top-2 items-center">
+                <div class="bg-brand-blue text-white  px-2 py-1 rounded-lg">
+                  <span>A+</span>
+                </div>
+                <div class="bg-brand-green text-white px-2 py-1 rounded-lg">
+                  <span>Продажа</span>
+                </div>
+              </div>
+            </div>
             <swiper
                 :style="{
       '--swiper-navigation-color': '#fff',
@@ -41,48 +50,18 @@
                 class="mySwiper2"
             >
               <swiper-slide>
-                <div class="relative">
-                  <div class="absolute flex gap-2 left-3 top-2 items-center">
-                    <div class="bg-brand-blue text-white  px-2 py-1 rounded-lg">
-                      <span>A+</span>
-                    </div>
-                    <div class="bg-brand-green text-white px-2 py-1 rounded-lg">
-                      <span>Продажа</span>
-                    </div>
-                  </div>
-                </div>
                 <img
                     src="/img/carousel.png"
                     alt="image"
                 />
               </swiper-slide>
               <swiper-slide>
-                <div class="relative">
-                  <div class="absolute flex gap-2 left-3 top-2 items-center">
-                    <div class="bg-brand-blue text-white  px-2 py-1 rounded-lg">
-                      <span>A+</span>
-                    </div>
-                    <div class="bg-brand-green text-white px-2 py-1 rounded-lg">
-                      <span>Продажа</span>
-                    </div>
-                  </div>
-                </div>
                 <img
                     src="/img/carousel.png"
                     alt="image"
                 />
               </swiper-slide>
               <swiper-slide>
-                <div class="relative">
-                  <div class="absolute flex gap-2 left-3 top-2 items-center">
-                    <div class="bg-brand-blue text-white  px-2 py-1 rounded-lg">
-                      <span>A+</span>
-                    </div>
-                    <div class="bg-brand-green text-white px-2 py-1 rounded-lg">
-                      <span>Продажа</span>
-                    </div>
-                  </div>
-                </div>
                 <img
                     src="/img/carousel.png"
                     alt="image"

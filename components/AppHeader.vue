@@ -1,5 +1,5 @@
 <template>
-  <header class="flex items-center container  justify-between py-4 px-4">
+  <header class="flex items-center container  justify-between py-1">
     <NuxtLink to="/"><img src="/img/logo.png" class="w-36 sm:w-56" alt="logo"></NuxtLink>
     <ul class="items-center gap-5 hidden lg:flex">
       <li class="p-3">
@@ -58,7 +58,7 @@ const menu = ref(false)
   width: 100%;
   height: 3px;
   background: #00B6F4;
-  bottom: -33px;
+  bottom: -19px;
 }
 
 .mobile_menu {
