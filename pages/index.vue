@@ -145,86 +145,86 @@
       <div
           class="metro bg-white mt-3 p-2 md:p-0 py-2 md:pb-6 md:pt-6 md:bg-transparent md:border-0 border border-custom-gray rounded-lg">
         <h3 class="pb-3 text-base">РЯДОМ С <span>МЕТРО</span></h3>
-        <div class="columns-3 items-start pb-3 hidden md:block ">
+        <div class="grid-cols-4 items-start pb-3 hidden md:grid gap-y-2 ">
           <div class="flex flex-col gap-2">
-            <a class="text-sm w-fit" href="#">Автово</a>
-            <a class="text-sm w-fit" href="#">Адмиралтейская</a>
-            <a class="text-sm w-fit" href="#">Академическая</a>
-            <a class="text-sm w-fit" href="#">Балтийская</a>
-            <a class="text-sm w-fit" href="#">Бухарестская</a>
-            <a class="text-sm w-fit" href="#">Василеостровская</a>
-            <a class="text-sm w-fit" href="#">Владимирская</a>
-            <a class="text-sm w-fit" href="#">Волковская</a>
-            <a class="text-sm w-fit" href="#">Выборгская</a>
-            <a class="text-sm w-fit" href="#">Горьковская</a>
-            <a class="text-sm w-fit" href="#">Гостиный двор</a>
-            <a class="text-sm w-fit" href="#">Гражданский проспект</a>
-            <a class="text-sm w-fit" href="#">Достоевская</a>
-            <a class="text-sm w-fit" href="#">Елизаровская</a>
-            <a class="text-sm w-fit" href="#">Звёздная</a>
-            <a class="text-sm w-fit" href="#">Звенигородская</a>
-            <a class="text-sm w-fit" href="#">Кировский завод</a>
-            <a class="text-sm w-fit" href="#">Комендантский проспект</a>
+            <a class="text-sm w-fit hover:text-brand-blue hover:underline" href="#">Автово</a>
+            <a class="text-sm w-fit hover:text-brand-blue hover:underline" href="#">Адмиралтейская</a>
+            <a class="text-sm w-fit hover:text-brand-blue hover:underline" href="#">Академическая</a>
+            <a class="text-sm w-fit hover:text-brand-blue hover:underline" href="#">Балтийская</a>
+            <a class="text-sm w-fit hover:text-brand-blue hover:underline" href="#">Бухарестская</a>
+            <a class="text-sm w-fit hover:text-brand-blue hover:underline" href="#">Василеостровская</a>
+            <a class="text-sm w-fit hover:text-brand-blue hover:underline" href="#">Владимирская</a>
+            <a class="text-sm w-fit hover:text-brand-blue hover:underline" href="#">Волковская</a>
+            <a class="text-sm w-fit hover:text-brand-blue hover:underline" href="#">Выборгская</a>
+            <a class="text-sm w-fit hover:text-brand-blue hover:underline" href="#">Горьковская</a>
+            <a class="text-sm w-fit hover:text-brand-blue hover:underline" href="#">Гостиный двор</a>
+            <a class="text-sm w-fit hover:text-brand-blue hover:underline" href="#">Гражданский проспект</a>
+            <a class="text-sm w-fit hover:text-brand-blue hover:underline" href="#">Достоевская</a>
+            <a class="text-sm w-fit hover:text-brand-blue hover:underline" href="#">Елизаровская</a>
+            <a class="text-sm w-fit hover:text-brand-blue hover:underline" href="#">Звёздная</a>
+            <a class="text-sm w-fit hover:text-brand-blue hover:underline" href="#">Звенигородская</a>
+            <a class="text-sm w-fit hover:text-brand-blue hover:underline" href="#">Кировский завод</a>
+            <a class="text-sm w-fit hover:text-brand-blue hover:underline" href="#">Комендантский проспект</a>
           </div>
           <div class="flex flex-col gap-2">
-            <a class="text-sm w-fit" href="#">Ломоносовская</a>
-            <a class="text-sm w-fit" href="#">Маяковская</a>
-            <a class="text-sm w-fit" href="#">Международная</a>
-            <a class="text-sm w-fit" href="#">Московская</a>
-            <a class="text-sm w-fit" href="#">Московские ворота</a>
-            <a class="text-sm w-fit" href="#">Нарвская</a>
-            <a class="text-sm w-fit" href="#">Невский проспект</a>
-            <a class="text-sm w-fit" href="#">Новочеркасская</a>
-            <a class="text-sm w-fit" href="#">Обводный канал</a>
-            <a class="text-sm w-fit" href="#">Обухово</a>
-            <a class="text-sm w-fit" href="#">Озерки</a>
-            <a class="text-sm w-fit" href="#">Парк Победы</a>
-            <a class="text-sm w-fit" href="#">Парнас</a>
-            <a class="text-sm w-fit" href="#">Петроградская</a>
-            <a class="text-sm w-fit" href="#">Пионерская</a>
-            <a class="text-sm w-fit" href="#">Площадь Александра Невского</a>
-            <a class="text-sm w-fit" href="#">Площадь Восстания</a>
-            <a class="text-sm w-fit" href="#">Площадь Ленина</a>
+            <a class="text-sm w-fit hover:text-brand-blue hover:underline" href="#">Ломоносовская</a>
+            <a class="text-sm w-fit hover:text-brand-blue hover:underline" href="#">Маяковская</a>
+            <a class="text-sm w-fit hover:text-brand-blue hover:underline" href="#">Международная</a>
+            <a class="text-sm w-fit hover:text-brand-blue hover:underline" href="#">Московская</a>
+            <a class="text-sm w-fit hover:text-brand-blue hover:underline" href="#">Московские ворота</a>
+            <a class="text-sm w-fit hover:text-brand-blue hover:underline" href="#">Нарвская</a>
+            <a class="text-sm w-fit hover:text-brand-blue hover:underline" href="#">Невский проспект</a>
+            <a class="text-sm w-fit hover:text-brand-blue hover:underline" href="#">Новочеркасская</a>
+            <a class="text-sm w-fit hover:text-brand-blue hover:underline" href="#">Обводный канал</a>
+            <a class="text-sm w-fit hover:text-brand-blue hover:underline" href="#">Обухово</a>
+            <a class="text-sm w-fit hover:text-brand-blue hover:underline" href="#">Озерки</a>
+            <a class="text-sm w-fit hover:text-brand-blue hover:underline" href="#">Парк Победы</a>
+            <a class="text-sm w-fit hover:text-brand-blue hover:underline" href="#">Парнас</a>
+            <a class="text-sm w-fit hover:text-brand-blue hover:underline" href="#">Петроградская</a>
+            <a class="text-sm w-fit hover:text-brand-blue hover:underline" href="#">Пионерская</a>
+            <a class="text-sm w-fit hover:text-brand-blue hover:underline" href="#">Площадь Александра Невского</a>
+            <a class="text-sm w-fit hover:text-brand-blue hover:underline" href="#">Площадь Восстания</a>
+            <a class="text-sm w-fit hover:text-brand-blue hover:underline" href="#">Площадь Ленина</a>
           </div>
           <div class="flex flex-col gap-2">
-            <a class="text-sm w-fit" href="#">Проспект Просвещения</a>
-            <a class="text-sm w-fit" href="#">Проспект Славы</a>
-            <a class="text-sm w-fit" href="#">Пушкинская</a>
-            <a class="text-sm w-fit" href="#">Садовая</a>
-            <a class="text-sm w-fit" href="#">Сенная площадь</a>
-            <a class="text-sm w-fit" href="#">Спасская</a>
-            <a class="text-sm w-fit" href="#">Спортивная</a>
-            <a class="text-sm w-fit" href="#">Старая деревня</a>
-            <a class="text-sm w-fit" href="#">Технологический институт</a>
-            <a class="text-sm w-fit" href="#">Удельная</a>
-            <a class="text-sm w-fit" href="#">Фрунзенская</a>
-            <a class="text-sm w-fit" href="#">Чёрная речка</a>
-            <a class="text-sm w-fit" href="#">Чернышевская</a>
-            <a class="text-sm w-fit" href="#">Чкаловская</a>
-            <a class="text-sm w-fit" href="#">Электросила</a>
-            <a class="text-sm w-fit" href="#">Автово</a>
-            <a class="text-sm w-fit" href="#">Адмиралтейская</a>
-            <a class="text-sm w-fit" href="#">Академическая</a>
+            <a class="text-sm w-fit hover:text-brand-blue hover:underline" href="#">Проспект Просвещения</a>
+            <a class="text-sm w-fit hover:text-brand-blue hover:underline" href="#">Проспект Славы</a>
+            <a class="text-sm w-fit hover:text-brand-blue hover:underline" href="#">Пушкинская</a>
+            <a class="text-sm w-fit hover:text-brand-blue hover:underline" href="#">Садовая</a>
+            <a class="text-sm w-fit hover:text-brand-blue hover:underline" href="#">Сенная площадь</a>
+            <a class="text-sm w-fit hover:text-brand-blue hover:underline" href="#">Спасская</a>
+            <a class="text-sm w-fit hover:text-brand-blue hover:underline" href="#">Спортивная</a>
+            <a class="text-sm w-fit hover:text-brand-blue hover:underline" href="#">Старая деревня</a>
+            <a class="text-sm w-fit hover:text-brand-blue hover:underline" href="#">Технологический институт</a>
+            <a class="text-sm w-fit hover:text-brand-blue hover:underline" href="#">Удельная</a>
+            <a class="text-sm w-fit hover:text-brand-blue hover:underline" href="#">Фрунзенская</a>
+            <a class="text-sm w-fit hover:text-brand-blue hover:underline" href="#">Чёрная речка</a>
+            <a class="text-sm w-fit hover:text-brand-blue hover:underline" href="#">Чернышевская</a>
+            <a class="text-sm w-fit hover:text-brand-blue hover:underline" href="#">Чкаловская</a>
+            <a class="text-sm w-fit hover:text-brand-blue hover:underline" href="#">Электросила</a>
+            <a class="text-sm w-fit hover:text-brand-blue hover:underline" href="#">Автово</a>
+            <a class="text-sm w-fit hover:text-brand-blue hover:underline" href="#">Адмиралтейская</a>
+            <a class="text-sm w-fit hover:text-brand-blue hover:underline" href="#">Академическая</a>
           </div>
           <div class="flex flex-col gap-2">
-            <a class="text-sm w-fit" href="#">Крестовский остров</a>
-            <a class="text-sm w-fit" href="#">Купчино</a>
-            <a class="text-sm w-fit" href="#">Ладожская</a>
-            <a class="text-sm w-fit" href="#">Ленинский проспект</a>
-            <a class="text-sm w-fit" href="#">Лесная</a>
-            <a class="text-sm w-fit" href="#">Лиговский проспект</a>
-            <a class="text-sm w-fit" href="#">Горьковская</a>
-            <a class="text-sm w-fit" href="#">Гостиный двор</a>
-            <a class="text-sm w-fit" href="#">Гражданский проспект</a>
-            <a class="text-sm w-fit" href="#">Площадь Мужества</a>
-            <a class="text-sm w-fit" href="#">Политехническая</a>
-            <a class="text-sm w-fit" href="#">Приморская</a>
-            <a class="text-sm w-fit" href="#">Пролетарская</a>
-            <a class="text-sm w-fit" href="#">Проспект Большевиков</a>
-            <a class="text-sm w-fit" href="#">Проспект Ветеранов</a>
-            <a class="text-sm w-fit" href="#">Достоевская</a>
-            <a class="text-sm w-fit" href="#">Елизаровская</a>
-            <a class="text-sm w-fit" href="#">Звёздная</a>
+            <a class="text-sm w-fit hover:text-brand-blue hover:underline" href="#">Крестовский остров</a>
+            <a class="text-sm w-fit hover:text-brand-blue hover:underline" href="#">Купчино</a>
+            <a class="text-sm w-fit hover:text-brand-blue hover:underline" href="#">Ладожская</a>
+            <a class="text-sm w-fit hover:text-brand-blue hover:underline" href="#">Ленинский проспект</a>
+            <a class="text-sm w-fit hover:text-brand-blue hover:underline" href="#">Лесная</a>
+            <a class="text-sm w-fit hover:text-brand-blue hover:underline" href="#">Лиговский проспект</a>
+            <a class="text-sm w-fit hover:text-brand-blue hover:underline" href="#">Горьковская</a>
+            <a class="text-sm w-fit hover:text-brand-blue hover:underline" href="#">Гостиный двор</a>
+            <a class="text-sm w-fit hover:text-brand-blue hover:underline" href="#">Гражданский проспект</a>
+            <a class="text-sm w-fit hover:text-brand-blue hover:underline" href="#">Площадь Мужества</a>
+            <a class="text-sm w-fit hover:text-brand-blue hover:underline" href="#">Политехническая</a>
+            <a class="text-sm w-fit hover:text-brand-blue hover:underline" href="#">Приморская</a>
+            <a class="text-sm w-fit hover:text-brand-blue hover:underline" href="#">Пролетарская</a>
+            <a class="text-sm w-fit hover:text-brand-blue hover:underline" href="#">Проспект Большевиков</a>
+            <a class="text-sm w-fit hover:text-brand-blue hover:underline" href="#">Проспект Ветеранов</a>
+            <a class="text-sm w-fit hover:text-brand-blue hover:underline" href="#">Достоевская</a>
+            <a class="text-sm w-fit hover:text-brand-blue hover:underline" href="#">Елизаровская</a>
+            <a class="text-sm w-fit hover:text-brand-blue hover:underline" href="#">Звёздная</a>
           </div>
         </div>
         <div class="flex items-center gap-2 bg-brand-bright px-3 py-2 rounded-xl  block md:hidden">
@@ -239,26 +239,26 @@
       <div
           class="near bg-white mt-3 p-2 md:pb-6 md:pt-6 md:bg-transparent md:border-0 border border-custom-gray rounded-lg">
         <h3 class="pb-3 text-base">В ВАШЕМ <span>РАЙОНЕ</span></h3>
-        <div class="columns-3 items-start pb-3  hidden md:block ">
+        <div class="grid-cols-4 items-start pb-3  hidden md:grid gap-y-2">
           <div class="flex flex-col gap-2">
-            <a class="text-sm w-fit" href="#">Адмиралтейский</a>
-            <a class="text-sm w-fit" href="#">Василеостровский</a>
-            <a class="text-sm w-fit" href="#">Выборгский</a>
+            <a class="text-sm w-fit hover:text-brand-blue hover:underline" href="#">Адмиралтейский</a>
+            <a class="text-sm w-fit hover:text-brand-blue hover:underline" href="#">Василеостровский</a>
+            <a class="text-sm w-fit hover:text-brand-blue hover:underline" href="#">Выборгский</a>
           </div>
           <div class="flex flex-col gap-2">
-            <a class="text-sm w-fit" href="#">Калининский</a>
-            <a class="text-sm w-fit" href="#">Кировский</a>
-            <a class="text-sm w-fit" href="#">Красногвардейский</a>
+            <a class="text-sm w-fit hover:text-brand-blue hover:underline" href="#">Калининский</a>
+            <a class="text-sm w-fit hover:text-brand-blue hover:underline" href="#">Кировский</a>
+            <a class="text-sm w-fit hover:text-brand-blue hover:underline" href="#">Красногвардейский</a>
           </div>
           <div class="flex flex-col gap-2">
-            <a class="text-sm w-fit" href="#">Красносельский</a>
-            <a class="text-sm w-fit" href="#">Московский</a>
-            <a class="text-sm w-fit" href="#">Невский</a>
+            <a class="text-sm w-fit hover:text-brand-blue hover:underline" href="#">Красносельский</a>
+            <a class="text-sm w-fit hover:text-brand-blue hover:underline" href="#">Московский</a>
+            <a class="text-sm w-fit hover:text-brand-blue hover:underline" href="#">Невский</a>
           </div>
           <div class="flex flex-col gap-2">
-            <a class="text-sm w-fit" href="#">Петроградский</a>
-            <a class="text-sm w-fit" href="#">Приморский</a>
-            <a class="text-sm w-fit" href="#">Пушкинский</a>
+            <a class="text-sm w-fit hover:text-brand-blue hover:underline" href="#">Петроградский</a>
+            <a class="text-sm w-fit hover:text-brand-blue hover:underline" href="#">Приморский</a>
+            <a class="text-sm w-fit hover:text-brand-blue hover:underline" href="#">Пушкинский</a>
           </div>
         </div>
         <div class="flex items-center gap-2 bg-brand-bright px-3 py-2 rounded-xl block md:hidden">

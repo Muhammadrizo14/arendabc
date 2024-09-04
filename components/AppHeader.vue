@@ -1,6 +1,6 @@
 <template>
-  <header class="flex items-center container  justify-between py-1">
-    <NuxtLink to="/"><img src="/img/logo.png" class="w-36 sm:w-56" alt="logo"></NuxtLink>
+  <header class="flex items-center container justify-between py-1 bg-brand-bright md:bg-white py-5 md:p-1">
+    <NuxtLink to="/"><img src="/img/logo.png" class="w-32 sm:w-56" alt="logo"></NuxtLink>
     <ul class="items-center gap-5 hidden lg:flex">
       <li class="p-3">
         <NuxtLink to="/sale" class="font-medium " active-class="active-link">Продажа</NuxtLink>
@@ -18,7 +18,7 @@
     <a href="tel:+7 (999) 999-99-99" class="text-brand-green font-bold sm:text-2xl text-base font-bold hidden lg:block">+7 (812) 987-73-31</a>
 
     <div class=" flex items-center gap-3 lg:hidden">
-      <a href="tel:+7 (999) 999-99-99" class="text-brand-green font-bold sm:text-2xl text-base font-bold">+7 (812) 987-73-31</a>
+      <a href="tel:+7 (999) 999-99-99" class="text-brand-green font-medium text-base font-bold">+7 (812) 987-73-31</a>
       <img src="/public/img/favorites.png"  alt="">
       <img src="/public/img/menu.png" @click="menu=!menu" alt="">
     </div>

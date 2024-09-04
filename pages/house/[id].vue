@@ -24,7 +24,6 @@
 
       <div class="container flex gap-6   flex-col md:flex-row">
         <div class="flex flex-col  items-center w-2/2 md:w-3/5">
-
           <div class="w-full max-h-[500px] ">
             <div class="relative z-50">
               <div class="absolute flex gap-2 left-3 top-2 items-center">
@@ -68,25 +67,25 @@
                 />
               </swiper-slide>
             </swiper>
-            <!--            <swiper-->
-            <!--                @swiper="setThumbsSwiper"-->
-            <!--                :spaceBetween="10"-->
-            <!--                :slidesPerView="6"-->
-            <!--                :freeMode="true"-->
-            <!--                :watchSlidesProgress="true"-->
-            <!--                :modules="modules"-->
-            <!--                class="mythumb"-->
-            <!--            >-->
-            <!--              <swiper-slide>-->
-            <!--                <img src="../../public/img/carousel.png"/>-->
-            <!--              </swiper-slide>-->
-            <!--              <swiper-slide>-->
-            <!--                <img src="../../public/img/carousel.png"/>-->
-            <!--              </swiper-slide>-->
-            <!--              <swiper-slide>-->
-            <!--                <img src="../../public/img/carousel.png"/>-->
-            <!--              </swiper-slide>-->
-            <!--            </swiper>-->
+                        <swiper
+                            @swiper="setThumbsSwiper"
+                            :spaceBetween="10"
+                            :slidesPerView="6"
+                            :freeMode="true"
+                            :watchSlidesProgress="true"
+                            :modules="modules"
+                            class="mythumb"
+                        >
+                          <swiper-slide>
+                            <img src="../../public/img/carousel.png"/>
+                          </swiper-slide>
+                          <swiper-slide>
+                            <img src="../../public/img/carousel.png"/>
+                          </swiper-slide>
+                          <swiper-slide>
+                            <img src="../../public/img/carousel.png"/>
+                          </swiper-slide>
+                        </swiper>
 
           </div>
           <div class="py-6 px-3 bg-white border mt-3 rounded-lg text-brand-grey w-full">

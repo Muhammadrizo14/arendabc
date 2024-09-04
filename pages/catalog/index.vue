@@ -50,6 +50,7 @@
         <Filter v-if="filter" class="absolute"  @updateFilter="filter = false"/>
       </div>
     </offer>
+
     <section class="stats bg-brand-bright">
       <div class="container flex items-start justify-between py-6 flex-col sm:flex-row sm:items-center">
         <h3>НАЙДЕНО <span>245 ОБЪЕКТОВ</span></h3>
@@ -67,7 +68,7 @@
             <p>Карта+Карточки</p>
           </div>
         </div>
-        <multiselect v-model="value" :options="options" :allowEmpty="false" :searchable="false" :show-labels="false" :preselectFirst="true"
+        <multiselect class="light" v-model="value" :options="options" :allowEmpty="false" :searchable="false" :show-labels="false" :preselectFirst="true"
                      placeholder="Сортировка"></multiselect>
       </div>
     </section>
@@ -114,3 +115,8 @@ const options = ref(['Сначала недорогие', 'Сначала дор
 const value = ref(options[0])
 
 </script>
+
+
+<style lang="scss">
+
+</style>

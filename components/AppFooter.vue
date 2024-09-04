@@ -7,19 +7,19 @@
           <h3 class="text-xl pb-3">НАВИГАЦИЯ</h3>
           <ul>
             <li>
-              <a href="#" class="text-xl font-medium">Главная</a>
+              <a href="#" class="text-xl font-medium hover:underline hover:text-brand-blue">Главная</a>
             </li>
             <li>
-              <a  class="text-xl font-medium" href="#">Каталог</a>
+              <a  class="text-xl font-medium hover:underline hover:text-brand-blue" href="#">Каталог</a>
             </li>
             <li>
-              <a  class="text-xl font-medium" href="#">Новости</a>
+              <a  class="text-xl font-medium hover:underline hover:text-brand-blue" href="#">Новости</a>
             </li>
             <li>
-              <a  class="text-xl font-medium" href="#">О сервисе</a>
+              <a  class="text-xl font-medium hover:underline hover:text-brand-blue" href="#">О сервисе</a>
             </li>
             <li>
-              <a  class="text-xl font-medium" href="#">Контакты</a>
+              <a  class="text-xl font-medium hover:underline hover:text-brand-blue" href="#">Контакты</a>
             </li>
 
           </ul>
@@ -28,19 +28,19 @@
           <h2 class="text-xl pb-3">ИНФОРМАЦИЯ</h2>
           <ul>
             <li>
-              <a  class="text-xl font-medium" href="#">Политика Cookie-файлов</a>
+              <a  class="text-xl font-medium hover:underline hover:text-brand-blue" href="#">Политика Cookie-файлов</a>
             </li>
             <li>
-              <a  class="text-xl font-medium" href="#">Пользовательское соглашение</a>
+              <a  class="text-xl font-medium hover:underline hover:text-brand-blue" href="#">Пользовательское соглашение</a>
             </li>
             <li>
-              <a  class="text-xl font-medium" href="#">Ценовая политика</a>
+              <a  class="text-xl font-medium hover:underline hover:text-brand-blue" href="#">Ценовая политика</a>
             </li>
             <li>
-              <a  class="text-xl font-medium" href="#">Политика закрытой базы</a>
+              <a  class="text-xl font-medium hover:underline hover:text-brand-blue" href="#">Политика закрытой базы</a>
             </li>
             <li>
-              <a  class="text-xl font-medium" href="#">Политика конфиденциальности</a>
+              <a  class="text-xl font-medium hover:underline hover:text-brand-blue" href="#">Политика конфиденциальности</a>
             </li>
           </ul>
         </div>
@@ -48,13 +48,13 @@
           <h2 class="text-xl pb-3">НАШИ КАНАЛЫ</h2>
           <ul>
             <li>
-              <a  class="text-xl font-medium" href="#">Телеграм-бот</a>
+              <a  class="text-xl font-medium hover:underline hover:text-brand-blue" href="#">Телеграм-бот</a>
             </li>
             <li>
-              <a  class="text-xl font-medium" href="#">Телеграм-канал</a>
+              <a  class="text-xl font-medium hover:underline hover:text-brand-blue" href="#">Телеграм-канал</a>
             </li>
             <li>
-              <a  class="text-xl font-medium" href="#">Закрытое сообщество</a>
+              <a  class="text-xl font-medium hover:underline hover:text-brand-blue" href="#">Закрытое сообщество</a>
             </li>
           </ul>
         </div>
