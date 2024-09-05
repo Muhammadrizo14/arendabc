@@ -54,17 +54,17 @@
     <section class="stats bg-brand-bright">
       <div class="container flex items-start justify-between py-6 flex-col sm:flex-row sm:items-center">
         <h3>НАЙДЕНО <span>245 ОБЪЕКТОВ</span></h3>
-        <div class="flex items-center py-3 md:py-0">
+        <div class="flex items-center py-3 md:py-0 w-full md:w-auto">
           <div @click="activeTab = 0" :class="activeTab === 0 ? 'bg-[#53B3F8] text-white' : 'bg-white text-black'"
-               class="cursor-pointer p-1.5 px-4 rounded-l-lg">
+               class="cursor-pointer p-1.5 px-4 rounded-l-lg w-full text-center md:w-auto">
             <p>Карточки</p>
           </div>
           <div @click="activeTab = 1" :class="activeTab === 1 ? 'bg-[#53B3F8] text-white' : 'bg-white text-black'"
-               class="cursor-pointer p-1.5 px-4">
+               class="cursor-pointer p-1.5 px-4 w-full text-center md:w-auto">
             <p>Карта</p>
           </div>
           <div @click="activeTab = 2" :class="activeTab === 2 ? 'bg-[#53B3F8] text-white' : 'bg-white text-black'"
-               class="cursor-pointer p-1.5 px-4 rounded-r-lg">
+               class="cursor-pointer p-1.5 px-4 rounded-r-lg w-full text-center md:w-auto">
             <p>Карта+Карточки</p>
           </div>
         </div>
@@ -74,7 +74,7 @@
     </section>
     <section class="result bg-brand-bright md:pb-6">
       <div class="container">
-        <div v-if="activeTab === 0" class="cards md:flex items-center gap-6 grid grid-cols-2 sm:grid-cols-3">
+        <div v-if="activeTab === 0" class="cards md:flex items-center gap-1 grid grid-cols-2 sm:grid-cols-3">
           <card/>
           <card/>
           <card/>

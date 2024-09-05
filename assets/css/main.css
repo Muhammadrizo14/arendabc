@@ -150,7 +150,7 @@ a {
 }
 @media (max-width: 768px) {
   .multiselect.light {
-    width: 206px;
+    width: 100%;
   }
 }
 .multiselect.light__tags {

@@ -1,5 +1,5 @@
 <template>
-  <NuxtLink :to="`/house/${1}`" class=" w-auto md:w-[288px]">
+  <NuxtLink :to="`/house/${1}`" class="w-auto md:w-[288px]">
     <div class="card">
       <div class="card__image relative">
         <div class="card_rate flex justify-between items-center absolute p-1 px-2 w-full">

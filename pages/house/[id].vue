@@ -25,7 +25,7 @@
       <div class="container flex gap-6   flex-col md:flex-row">
         <div class="flex flex-col  items-center w-2/2 md:w-3/5">
           <div class="w-full max-h-[500px] ">
-            <div class="relative z-50">
+            <div class="relative z-30">
               <div class="absolute flex gap-2 left-3 top-2 items-center">
                 <div class="bg-brand-blue text-white  px-2 py-1 rounded-lg">
                   <span>A+</span>
@@ -67,25 +67,25 @@
                 />
               </swiper-slide>
             </swiper>
-                        <swiper
-                            @swiper="setThumbsSwiper"
-                            :spaceBetween="10"
-                            :slidesPerView="6"
-                            :freeMode="true"
-                            :watchSlidesProgress="true"
-                            :modules="modules"
-                            class="mythumb"
-                        >
-                          <swiper-slide>
-                            <img src="../../public/img/carousel.png"/>
-                          </swiper-slide>
-                          <swiper-slide>
-                            <img src="../../public/img/carousel.png"/>
-                          </swiper-slide>
-                          <swiper-slide>
-                            <img src="../../public/img/carousel.png"/>
-                          </swiper-slide>
-                        </swiper>
+<!--                        <swiper-->
+<!--                            @swiper="setThumbsSwiper"-->
+<!--                            :spaceBetween="10"-->
+<!--                            :slidesPerView="6"-->
+<!--                            :freeMode="true"-->
+<!--                            :watchSlidesProgress="true"-->
+<!--                            :modules="modules"-->
+<!--                            class="mythumb"-->
+<!--                        >-->
+<!--                          <swiper-slide>-->
+<!--                            <img src="../../public/img/carousel.png"/>-->
+<!--                          </swiper-slide>-->
+<!--                          <swiper-slide>-->
+<!--                            <img src="../../public/img/carousel.png"/>-->
+<!--                          </swiper-slide>-->
+<!--                          <swiper-slide>-->
+<!--                            <img src="../../public/img/carousel.png"/>-->
+<!--                          </swiper-slide>-->
+<!--                        </swiper>-->
 
           </div>
           <div class="py-6 px-3 bg-white border mt-3 rounded-lg text-brand-grey w-full">
@@ -110,13 +110,12 @@
               <p>Бухарестская</p>
               <p>17 мин.</p>
             </div>
-            <p class="py-3 font-light w-full  "
-               :class="hideInfo ? 'max-[728px]:truncate max-[768px]:text-wrap max-[768px]:h-[110px]' : ''">
+            <p class="py-3 font-light w-full">
               Предлагаем Вашему вниманию объект коммерческой недвижимости общей площадью более 22000 м2. Здание
               расположено на земельном участке площадью 5 Га, который имеет категорию земель населенных пунктов и
               предназначен для размещения объектов розничной торговли.
-              <br>
-              <br>
+            </p>
+            <p class="py-3 font-light w-full" v-if="!hideInfo">
               Объект обеспечен всеми необходимыми коммуникациями, включая электроснабжение мощностью 1000 кВт,
               теплоснабжение от собственной котельной мощностью 268 кВт, а также водопровод и канализацию объемом 54,24
               кубических метра.
@@ -200,7 +199,7 @@
                 <p class="text-brand-grey">Есть</p>
               </div>
               <div class="flex items-center gap-8">
-                <div class="flex items-center gap-2 w-1/2">
+                <div class="flex items-center gap-2 w-2/2 md:w-1/2">
                   <img src="/public/img/icons/time.svg" alt="">
 
                   <p class="font-medium">РЕЖИМ РАБОТЫ</p>

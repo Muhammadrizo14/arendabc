@@ -1,7 +1,7 @@
 <template>
   <div class="bg-brand-bright">
     <offer class="bg-none md:bg-[url('public/img/offer.png')]">
-      <div class="offer__container py-16">
+      <div class="offer__container md:py-16">
         <div class="bar py-1 px-3 md:p-3 bg-white rounded-md flex items-center gap-3 ">
           <AppButton class="py-3" @click="filter=!filter">
             <p class="hidden sm:block">Фильтр</p>
@@ -11,14 +11,16 @@
                   d="M11.3333 0H0.666667C0.489856 0 0.320286 0.0720853 0.195262 0.200398C0.0702379 0.328711 0 0.50274 0 0.684202V2.20792L0.00533326 2.3605C0.0385388 2.81735 0.219709 3.24967 0.52 3.58864L3.33333 6.76402V12.3156C3.33331 12.424 3.35839 12.5309 3.4065 12.6274C3.45461 12.7239 3.52438 12.8073 3.61006 12.8708C3.69574 12.9342 3.79488 12.9758 3.8993 12.9922C4.00373 13.0085 4.11045 12.9992 4.21067 12.9649L8.21067 11.5965L8.28267 11.5671C8.39748 11.512 8.49458 11.4243 8.56259 11.3145C8.63061 11.2048 8.66671 11.0773 8.66667 10.9472V6.44108L11.414 3.62216C11.5999 3.43144 11.7473 3.20499 11.8479 2.95575C11.9484 2.7065 12.0001 2.43936 12 2.1696V0.684202C12 0.50274 11.9298 0.328711 11.8047 0.200398C11.6797 0.0720853 11.5101 0 11.3333 0Z"
                   fill="white"/>
             </svg>
-            <svg class="block sm:hidden" width="13" height="13"  v-else viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="block sm:hidden" width="13" height="13" v-else viewBox="0 0 12 13" fill="none"
+                 xmlns="http://www.w3.org/2000/svg">
               <path d="M13 1L1 13" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
               <path d="M1 1L13 13" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
 
           </AppButton>
           <div class="flex items-center w-full">
-            <input class="w-full py-3 outline-none h-full text-base md:text-2xl" type="text" placeholder="поиск" v-model="search">
+            <input class="w-full py-3 outline-none h-full text-base md:text-2xl" type="text" placeholder="поиск"
+                   v-model="search">
             <svg @click="search=''" class="block sm:hidden" width="20" height="20" viewBox="0 0 14 14" fill="none"
                  xmlns="http://www.w3.org/2000/svg">
               <path d="M13 1L1 13" stroke="#8F8F8F" stroke-opacity="0.79" stroke-linecap="round"
@@ -52,10 +54,14 @@
               :modules="modules"
               class="mySwiper"
               :breakpoints="{
-                '100': {
-                  slidesPerView: 1.5,
-                  spaceBetween: 20,
-                },
+'0': {
+        slidesPerView: 1.5,
+        spaceBetween: 20,
+      },
+              '380': {
+        slidesPerView: 1.9,
+        spaceBetween: 20,
+      },
                           '420': {
                   slidesPerView: 2.1,
                   spaceBetween: 10,
@@ -104,8 +110,12 @@
               :modules="modules"
               class="mySwiper"
               :breakpoints="{
-                '100': {
+                '0': {
         slidesPerView: 1.5,
+        spaceBetween: 20,
+      },
+              '380': {
+        slidesPerView: 1.9,
         spaceBetween: 20,
       },
                 '420': {
@@ -275,9 +285,10 @@
       <div class="container rounded flex items-center gap-6">
         <img class="hidden lg:block" src="../public/img/about.png" alt="">
         <div
-            class="mt-3 p-2 md:pb-6 md:pt-6 md:bg-transparent md:border-0 border border-custom-gray rounded-lg bg-(url('public/img/offer.png')) bg-cover bg-white">
-          <h2 class="pb-3 text-brand-grey text-3xl text-xl md:text-3xl">Аренда коммерческой недвижимости на <span>ARENDA</span><span
-              class="text-brand-green">BC</span></h2>
+            class="mt-3 p-2 md:pb-6 md:pt-6 md:bg-transparent md:border-0 border border-custom-gray rounded-lg bg-[url('/public/img/aboutbg.png')] bg-cover bg-white">
+          <h2 class="pb-3 text-brand-grey text-3xl text-xl md:text-3xl">Аренда коммерческой недвижимости на
+            <span>ARENDA</span><span
+                class="text-brand-green">BC</span></h2>
           <p class="pb-4 text-brand-grey">
             Большинство частных предпринимателей в какой-то момент своей деятельности сталкиваются с необходимостью
             разместить свое дело в одном месте. И не имеет значения, связано это с потребностью обслуживать клиентов или
@@ -302,11 +313,11 @@
       <div
           class=" bg-white mt-3 p-2 md:pb-6 md:pt-6 md:bg-transparent md:border-0 border border-custom-gray rounded-lg bg-(url('/img/aboutbg.png'))">
         <div class="flex items-center justify-between pb-3">
-          <h3 class="text-brand-grey md:text-2xl font-extrabold text-xl">НОВЫЕ ОБЪЕКТЫ</h3>
+          <h3 class="text-brand-grey md:text-2xl font-bold md:font-extrabold text-xl">НОВЫЕ ОБЪЕКТЫ</h3>
           <AppButton class="hidden md:block">
             <p class="text-base">Добавить объект</p>
           </AppButton>
-          <AppButton class="block md:hidden py-1 px-2">
+          <AppButton class="block md:hidden py-[3px] px-[10px] md:py-1 md:px-2">
             <div class="flex items-center gap-2">
               <p class="text-sm">Показать всё</p>
               <img src="/img/icons/arrowright.png" alt="">
@@ -321,7 +332,7 @@
             class="mySwiper"
             :breakpoints="{
                 '100': {
-                  slidesPerView: 1.2,
+                  slidesPerView: 1.5,
                   spaceBetween: 20,
                 },
                 '451': {
