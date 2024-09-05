@@ -1,6 +1,6 @@
 <template>
   <div class="bg-brand-bright">
-    <offer class="bg-none md:bg-[url('public/img/offer.png')]">
+    <offer class="bg-none md:bg-[url('public/img/offer.png')] ">
       <div class="offer__container md:py-16">
         <div class="bar py-1 px-3 md:p-3 bg-white rounded-md flex items-center gap-3 ">
           <AppButton class="py-3" @click="filter=!filter">
@@ -19,7 +19,7 @@
 
           </AppButton>
           <div class="flex items-center w-full">
-            <input class="w-full py-3 outline-none h-full text-base md:text-2xl" type="text" placeholder="поиск"
+            <input class="w-full py-3 outline-none h-full text-base md:text-2xl text-center" type="text" placeholder="поиск"
                    v-model="search">
             <svg @click="search=''" class="block sm:hidden" width="20" height="20" viewBox="0 0 14 14" fill="none"
                  xmlns="http://www.w3.org/2000/svg">
@@ -240,7 +240,7 @@
         <div class="flex items-center gap-2 bg-brand-bright px-3 py-2 rounded-xl  block md:hidden">
           <input type="text" placeholder="поиск" class="w-full outline-none bg-transparent" v-model="metro">
           <img src="/img/icons/close.svg" alt="" @click="metro=''">
-          <AppButton class="py-px.5 px-2">
+          <AppButton class="py-[2px] px-1 text-base">
             Найти
           </AppButton>
         </div>
@@ -274,7 +274,7 @@
         <div class="flex items-center gap-2 bg-brand-bright px-3 py-2 rounded-xl block md:hidden">
           <input type="text" placeholder="поиск" class="w-full outline-none bg-transparent" v-model="area">
           <img src="/img/icons/close.svg" alt="" @click="area=''">
-          <AppButton class="py-px.5 px-2">
+          <AppButton class="py-[2px] px-1 text-base">
             Найти
           </AppButton>
         </div>

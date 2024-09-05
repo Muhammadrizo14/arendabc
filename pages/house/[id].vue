@@ -1,7 +1,7 @@
 <template>
   <div class="h-full bg-brand-bright">
     <offer>
-      <div class="flex justify-between flex-col md:flex-row md:items-center py-6 ">
+      <div class="flex justify-between flex-col md:flex-row md:items-center py-6 md:py-16 ">
         <div>
           <h3 class="font-bold text-base md:text-xl ">[ОБЪЕКТ/БЦ/ТРЦ/ТЦ/ОФИС/ОСЗ]</h3>
           <h2 class="text-white font-black text-xl md:text-2xl">ПРОДАЖА ТЦ НА ПУЛКОВСКОМ ШОССЕ</h2>
@@ -24,69 +24,58 @@
 
       <div class="container flex gap-6   flex-col md:flex-row">
         <div class="flex flex-col  items-center w-2/2 md:w-3/5">
-          <div class="w-full max-h-[500px] ">
-            <div class="relative z-30">
-              <div class="absolute flex gap-2 left-3 top-2 items-center">
-                <div class="bg-brand-blue text-white  px-2 py-1 rounded-lg">
-                  <span>A+</span>
-                </div>
-                <div class="bg-brand-green text-white px-2 py-1 rounded-lg">
-                  <span>Продажа</span>
+          <div class="flex items-stretch w-full h-full max-h-[600px] gap-3">
+            <div class="w-[15%] flex flex-col gap-2">
+              <img src="public/img/carousel/1.png" width="92" alt="">
+              <img src="public/img/carousel/2.png" width="92" alt="">
+              <img src="public/img/carousel/3.png" width="92" alt="">
+              <img src="public/img/carousel/3.png" width="92" alt="">
+              <img src="public/img/carousel/3.png" width="92" alt="">
+              <img src="public/img/carousel/3.png" width="92" alt="">
+            </div>
+            <div class="w-[85%]">
+              <div class="relative z-30 hidden md:block">
+                <div class="absolute flex gap-2 left-3 top-2 items-center">
+                  <div class="bg-brand-blue text-white  px-2 py-1 rounded-lg">
+                    <span>A+</span>
+                  </div>
+                  <div class="bg-brand-green text-white px-2 py-1 rounded-lg">
+                    <span>Продажа</span>
+                  </div>
                 </div>
               </div>
-            </div>
-            <swiper
-                :style="{
+              <swiper
+                  :style="{
       '--swiper-navigation-color': '#fff',
       '--swiper-pagination-color': '#fff',
-      'height': '400px',
       'border-radius': '12px'
     }"
-                :spaceBetween="10"
-                :navigation="true"
-                :thumbs="{ swiper: thumbsSwiper }"
-                :modules="modules"
-                class="mySwiper2"
-            >
-              <swiper-slide>
-                <img
-                    src="/img/carousel.png"
-                    alt="image"
-                />
-              </swiper-slide>
-              <swiper-slide>
-                <img
-                    src="/img/carousel.png"
-                    alt="image"
-                />
-              </swiper-slide>
-              <swiper-slide>
-                <img
-                    src="/img/carousel.png"
-                    alt="image"
-                />
-              </swiper-slide>
-            </swiper>
-<!--                        <swiper-->
-<!--                            @swiper="setThumbsSwiper"-->
-<!--                            :spaceBetween="10"-->
-<!--                            :slidesPerView="6"-->
-<!--                            :freeMode="true"-->
-<!--                            :watchSlidesProgress="true"-->
-<!--                            :modules="modules"-->
-<!--                            class="mythumb"-->
-<!--                        >-->
-<!--                          <swiper-slide>-->
-<!--                            <img src="../../public/img/carousel.png"/>-->
-<!--                          </swiper-slide>-->
-<!--                          <swiper-slide>-->
-<!--                            <img src="../../public/img/carousel.png"/>-->
-<!--                          </swiper-slide>-->
-<!--                          <swiper-slide>-->
-<!--                            <img src="../../public/img/carousel.png"/>-->
-<!--                          </swiper-slide>-->
-<!--                        </swiper>-->
-
+                  :spaceBetween="10"
+                  :navigation="true"
+                  :thumbs="{ swiper: thumbsSwiper }"
+                  :modules="modules"
+                  class="mySwiper2"
+              >
+                <swiper-slide>
+                  <img
+                      src="/img/carousel.png"
+                      alt="image"
+                  />
+                </swiper-slide>
+                <swiper-slide>
+                  <img
+                      src="/img/carousel.png"
+                      alt="image"
+                  />
+                </swiper-slide>
+                <swiper-slide>
+                  <img
+                      src="/img/carousel.png"
+                      alt="image"
+                  />
+                </swiper-slide>
+              </swiper>
+            </div>
           </div>
           <div class="py-6 px-3 bg-white border mt-3 rounded-lg text-brand-grey w-full">
             <h3 class="text-lg md:text-xl"><span class="underline">АРЕНДА</span> ОТДЕЛЬНО СТОЯЩЕГО ЗДАНИЯ, <span
@@ -115,7 +104,7 @@
               расположено на земельном участке площадью 5 Га, который имеет категорию земель населенных пунктов и
               предназначен для размещения объектов розничной торговли.
             </p>
-            <p class="py-3 font-light w-full" v-if="!hideInfo">
+            <p class="py-3 font-light w-full" :class="hideInfo && 'max-[768px]:hidden'">
               Объект обеспечен всеми необходимыми коммуникациями, включая электроснабжение мощностью 1000 кВт,
               теплоснабжение от собственной котельной мощностью 268 кВт, а также водопровод и канализацию объемом 54,24
               кубических метра.
@@ -141,11 +130,27 @@
               ОБНОВЛЕНО 23.09.2024
             </p>
           </div>
-          <iframe
-              src="https://yandex.com/map-widget/v1/?um=constructor%3A50b6cc0bb34e455ec6a7168ecb8673b2c1e6aaace3d0d977bc840e6ecaaba705&amp;source=constructor"
-              class="w-full md:h-2/5 pt-3 md:pt-0 h-[500px]" frameborder="0"></iframe>
-          <div>
-            <div class="py-6 px-3 bg-white border mt-3 rounded-lg">
+          <div class="relative h-[500px] md:h-[600px] pt-3 md:pt-0 rounded-lg">
+            <iframe
+                src="https://yandex.com/map-widget/v1/?um=constructor%3A50b6cc0bb34e455ec6a7168ecb8673b2c1e6aaace3d0d977bc840e6ecaaba705&amp;source=constructor"
+                class="w-full h-full absolute rounded-lg" frameborder="0"></iframe>
+            <div class="absolute md:bottom-0 w-full bottom-[-10px]">
+              <button class="flex items-center justify-center mb-6 bg-brand-blue text-white py-2 px-3 rounded gap-2 w-fit mx-auto font-medium">
+                <img src="../../public/img/icons/ponarama.svg" alt="">
+                Панорама
+              </button>
+              <div class="w-full h-24 flex items-center gap-6 bg-[#D6D6D680] pl-4 rounded-lg ">
+                <img src="/public/img/icons/location.svg" alt="">
+                <div>
+                  <h1 class="text-xl text-[#E73235] font-bold">Санкт-Петербург,</h1>
+                  <p class="text-xl font-normal ">Московскийр-онПулковское ш</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="flex flex-col gap-5 pt-4">
+            <div class="py-6 px-3 bg-white border rounded-lg">
               <h3 class="pb-3 font-bold text-base md:text-lg">ЦЕНА</h3>
 
               <div class="flex items-center justify-between ">
@@ -161,7 +166,7 @@
                 <p class="text-brand-grey">в год</p>
               </div>
             </div>
-            <div class="py-6 px-3 bg-white border mt-3 rounded-lg">
+            <div class="py-6 px-3 bg-white border rounded-lg">
               <h3 class="text-brand-blue font-bold text-base md:text-lg">ПО ВОПРОСУ АРЕНДЫ</h3>
 
               <div class="flex items-center gap-8 pt-3">
@@ -187,7 +192,7 @@
                 </div>
               </div>
             </div>
-            <div class="py-6 px-3 bg-white border mt-3 rounded-lg">
+            <div class="py-6 px-3 bg-white border rounded-lg">
               <h3 class="font-bold text-base md:text-lg">ДОПОЛНИТЕЛЬНО</h3>
 
               <div class="flex items-center gap-8 pt-3">
@@ -275,8 +280,11 @@ const hideInfo = ref(true);
 }
 
 .mySwiper2 {
-  height: 80%;
+  height: 100%;
   width: 100%;
+  .swiper-button-prev::after {
+    content: '' !important;
+  }
 }
 
 .mythumb {

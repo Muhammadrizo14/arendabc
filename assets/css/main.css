@@ -127,20 +127,20 @@ a {
     width: 100%;
   }
 }
-.multiselect.bright__tags {
+.multiselect.bright > .multiselect__tags {
   background: #f5f5f5;
 }
-.multiselect.bright__tags .multiselect__single {
+.multiselect.bright > .multiselect__tags .multiselect__single {
   background: #f5f5f5;
 }
-.multiselect.bright__tags .multiselect__input {
+.multiselect.bright > .multiselect__tags .multiselect__input {
   background: #f5f5f5;
 }
-.multiselect.bright__option--highlight {
-  background: #00b6f4;
+.multiselect__option--highlight {
+  background: #00b6f4 !important;
 }
-.multiselect.bright__option--highlight:after {
-  background: #00b6f4;
+.multiselect.multiselect__option--highlight:after {
+  background: #00b6f4 !important;
 }
 
 
@@ -163,8 +163,51 @@ a {
   background: #fff;
 }
 .multiselect.light__option--highlight {
-  background: #00b6f4;
+  background: #00b6f4 !important;
 }
 .multiselect.light__option--highlight:after {
-  background: #00b6f4;
+  background: #00b6f4 !important;
+}
+
+.mySwiper2 > .swiper-button-prev {
+  top: 0;
+  margin-top: 0;
+  height: 100%;
+  padding: 0 10px;
+  left: 0;
+  width: auto;
+  transition: 0.6s ease all;
+}
+
+.mySwiper2 > .swiper-button-next {
+  top: 0;
+  margin-top: 0;
+  height: 100%;
+  padding: 0 10px;
+  right: 0;
+  width: auto;
+  transition: 0.6s ease all;
+
+}
+
+.mySwiper2 > .swiper-button-prev::after {
+  content: 'precustom' !important;
+  width: 30px;
+  background-image: url("/public/img/icons/carousel/prev.svg");
+  background-repeat: no-repeat;
+}
+
+.mySwiper2 > .swiper-button-next::after {
+  content: 'precustom' !important;
+  width: 30px;
+  background-image: url("/public/img/icons/carousel/next.svg");
+  background-repeat: no-repeat;
+}
+
+.mySwiper2 > .swiper-button-prev:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.mySwiper2 > .swiper-button-next:hover {
+  background: rgba(0, 0, 0, 0.2);
 }

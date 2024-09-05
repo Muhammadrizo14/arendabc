@@ -52,7 +52,10 @@ const rent = ref([
     "title": "Встроенные помещения",
     "imageUrl": "2.png"
   },
-
+  {
+    "title": "Встроенные помещения",
+    "imageUrl": "2.png"
+  },
 ])
 
 function setActiveCard(index) {
@@ -86,7 +89,7 @@ const emit = defineEmits(['updateFilter']);
       </div>
       <div class="flex items-center w-4/5">
         <div @click="active_tab=0" :class="active_tab === 0 ? 'bg-brand-blue text-white' : 'text-brand-blue'"
-             class="cursor-pointer py-px  px-4 md:py-1 lg:px-4  border border-brand-blue  rounded-l-lg">Все
+             class="cursor-pointer py-px  px-4 md:py-1 lg:px-6  border border-brand-blue  rounded-l-lg">Все
         </div>
         <div @click="active_tab=1" :class="active_tab === 1 ? 'bg-brand-blue text-white' : 'text-brand-blue'"
              class="cursor-pointer py-px  px-4 md:py-1 lg:px-4 text-brand-blue border border-brand-blue">Аренда
@@ -102,7 +105,7 @@ const emit = defineEmits(['updateFilter']);
         <p class="text-base">Тип</p>
       </div>
       <div class="flex items-center gap-2 w-5/5 md:w-4/5">
-        <OfferCard class="hidden md:flex" v-for="(home, index) in rent" :key="index" :image="home.imageUrl"
+        <OfferCard class="hidden md:flex !h-[169px] min-h-fit text-xs" v-for="(home, index) in rent" :key="index" :image="home.imageUrl"
                    :title="home.title" :class="{ 'border-brand-blue border-[3px]': activeCard === index }"
                    @click="setActiveCard(index)"/>
         <div class="block md:hidden w-full">

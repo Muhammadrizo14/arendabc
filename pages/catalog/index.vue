@@ -20,7 +20,8 @@
 
           </AppButton>
           <div class="flex items-center w-full">
-            <input class="w-full py-3 outline-none h-full  text-2xl" type="text" placeholder="поиск" v-model="search">
+            <input class="w-full py-3 outline-none h-full text-2xl text-center" type="text" placeholder="поиск"
+                   v-model="search">
             <svg @click="search=''" class="block sm:hidden" width="20" height="20" viewBox="0 0 14 14" fill="none"
                  xmlns="http://www.w3.org/2000/svg">
               <path d="M13 1L1 13" stroke="#8F8F8F" stroke-opacity="0.79" stroke-linecap="round"
@@ -46,8 +47,10 @@
             метро Адмиралтейское, по цене от 1500 руб. за кв.м </p>
         </div>
       </div>
-      <div class="relative z-20 pb-20">
-        <Filter v-if="filter" class="absolute"  @updateFilter="filter = false"/>
+
+      <!--pb-20 чтобы фильтр не съехал на навигацию-->
+      <div class="relative z-20 md:pb-0" :class="filter && 'pb-20'">
+        <Filter v-if="filter" class="absolute" @updateFilter="filter = false"/>
       </div>
     </offer>
 
@@ -68,13 +71,15 @@
             <p>Карта+Карточки</p>
           </div>
         </div>
-        <multiselect class="light" v-model="value" :options="options" :allowEmpty="false" :searchable="false" :show-labels="false" :preselectFirst="true"
+        <multiselect class="light" v-model="value" :options="options" :allowEmpty="false" :searchable="false"
+                     :show-labels="false" :preselectFirst="true"
                      placeholder="Сортировка"></multiselect>
       </div>
     </section>
     <section class="result bg-brand-bright md:pb-6">
       <div class="container">
-        <div v-if="activeTab === 0" class="cards md:grid md:grid-cols-4 items-center gap-1 grid grid-cols-2 sm:grid-cols-3">
+        <div v-if="activeTab === 0"
+             class="cards md:grid md:grid-cols-4 items-center gap-1 grid grid-cols-2 sm:grid-cols-3">
           <card/>
           <card/>
           <card/>
