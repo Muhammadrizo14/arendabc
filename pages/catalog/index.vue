@@ -46,7 +46,7 @@
             метро Адмиралтейское, по цене от 1500 руб. за кв.м </p>
         </div>
       </div>
-      <div class="relative z-50">
+      <div class="relative z-20 pb-20">
         <Filter v-if="filter" class="absolute"  @updateFilter="filter = false"/>
       </div>
     </offer>

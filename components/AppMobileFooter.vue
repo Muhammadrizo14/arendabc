@@ -1,5 +1,5 @@
 <template>
-  <div class="p-2 block md:hidden bg-brand-blue fixed bottom-0 w-full z-20">
+  <div class="p-2 block md:hidden bg-brand-blue fixed bottom-0 w-full z-30">
     <div class="container flex items-center justify-between">
       <a class="flex flex-col items-center gap-2">
         <img src="/img/icons/mobile/home.png" alt="">

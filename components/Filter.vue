@@ -3,6 +3,7 @@ import Multiselect from 'vue-multiselect'
 import OfferCard from "./Offer/OfferCard";
 import AppButton from "./AppButton";
 
+
 const active_tab = ref(0)
 
 const selectedArea = ref([])
@@ -63,6 +64,22 @@ const emit = defineEmits(['updateFilter']);
 
 <template>
   <div class="bg-white mt-3 border border-custom-gray rounded-lg w-full filter">
+    <div class="relative block md:hidden">
+      <div class="absolute right-1 top-1">
+        <button class="close" @click="emit('updateFilter')">
+          <svg fill="#000000" height="20" width="20" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+               xmlns:xlink="http://www.w3.org/1999/xlink"
+               viewBox="0 0 512 512" xml:space="preserve">
+            <g>
+              <g>
+                <polygon points="512,59.076 452.922,0 256,196.922 59.076,0 0,59.076 196.922,256 0,452.922 59.076,512 256,315.076 452.922,512
+                  512,452.922 315.076,256 		"/>
+              </g>
+            </g>
+            </svg>
+        </button>
+      </div>
+    </div>
     <div class="category flex pt-2 md:p-4 flex-col gap-2 md:flex-row md:items-center px-2">
       <div class="w-1/5">
         <p class="text-base">Категория</p>
@@ -89,7 +106,8 @@ const emit = defineEmits(['updateFilter']);
                    :title="home.title" :class="{ 'border-brand-blue border-[3px]': activeCard === index }"
                    @click="setActiveCard(index)"/>
         <div class="block md:hidden w-full">
-          <multiselect class="bright" v-model="selectedType" :show-labels="false" :options="types" :allowEmpty="false" :multiple="true"
+          <multiselect class="bright" v-model="selectedType" :show-labels="false" :options="types" :allowEmpty="false"
+                       :multiple="true"
                        placeholder="Выбрать район" :searchable="false">
             <template #selection="{ values, search, isOpen }">
         <span class="multiselect__single"
@@ -174,7 +192,7 @@ const emit = defineEmits(['updateFilter']);
 
 <style scoped>
 .filter {
-  box-shadow:0px 8px 6px 0px #00000026;
+  box-shadow: 0px 8px 6px 0px #00000026;
 
 }
 </style>
