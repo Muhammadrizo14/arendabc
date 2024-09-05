@@ -285,7 +285,7 @@
       <div class="container rounded flex items-center gap-6">
         <img class="hidden lg:block" src="../public/img/about.png" alt="">
         <div
-            class="mt-3 p-2 md:pb-6 md:pt-6 md:bg-transparent md:border-0 border border-custom-gray rounded-lg bg-[url('/public/img/aboutbg.png')] bg-cover bg-white">
+            class="mt-3 p-2 md:pb-6 md:pt-6 md:bg-transparent md:border-0 border border-custom-gray rounded-lg max-[1024px]:bg-[url('/public/img/aboutbg.png')] bg-cover bg-white">
           <h2 class="pb-3 text-brand-grey text-3xl text-xl md:text-3xl">Аренда коммерческой недвижимости на
             <span>ARENDA</span><span
                 class="text-brand-green">BC</span></h2>
