@@ -74,7 +74,7 @@
     </section>
     <section class="result bg-brand-bright md:pb-6">
       <div class="container">
-        <div v-if="activeTab === 0" class="cards md:flex items-center gap-1 grid grid-cols-2 sm:grid-cols-3">
+        <div v-if="activeTab === 0" class="cards md:grid md:grid-cols-4 items-center gap-1 grid grid-cols-2 sm:grid-cols-3">
           <card/>
           <card/>
           <card/>

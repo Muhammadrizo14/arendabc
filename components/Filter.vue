@@ -62,8 +62,8 @@ const emit = defineEmits(['updateFilter']);
 </script>
 
 <template>
-  <div class="bg-white mt-3 border border-custom-gray rounded-lg w-full">
-    <div class="category flex  pt-2 md:p-4 flex-col gap-2 md:flex-row md:items-center container">
+  <div class="bg-white mt-3 border border-custom-gray rounded-lg w-full filter">
+    <div class="category flex pt-2 md:p-4 flex-col gap-2 md:flex-row md:items-center px-2">
       <div class="w-1/5">
         <p class="text-base">Категория</p>
       </div>
@@ -80,7 +80,7 @@ const emit = defineEmits(['updateFilter']);
         </div>
       </div>
     </div>
-    <div class="category flex  pt-6 md:p-4 flex-col gap-2 md:flex-row md:items-center md:bg-brand-bright ">
+    <div class="category flex  pt-6 md:p-4 flex-col gap-2 md:flex-row md:items-center md:bg-brand-bright  px-2">
       <div class="w-1/5">
         <p class="text-base">Тип</p>
       </div>
@@ -101,7 +101,7 @@ const emit = defineEmits(['updateFilter']);
       </div>
 
     </div>
-    <div class="category flex pt-6 md:p-4 flex-col md:flex-row md:items-center">
+    <div class="category flex pt-6 md:p-4 flex-col md:flex-row md:items-center px-2">
       <div class="w-full pb-3 md:pb-0 flex items-center justify-between md:w-1/5">
         <p class="text-base">Цена</p>
         <p class="text-brand-blue text-base md:hidden block">{всё/кв.м.}</p>
@@ -112,7 +112,7 @@ const emit = defineEmits(['updateFilter']);
         <p class="text-brand-blue text-base md:block hidden">{всё/кв.м.}</p>
       </div>
     </div>
-    <div class="category flex pt-6 md:p-4 md:bg-brand-bright flex-col md:flex-row md:items-center ">
+    <div class="category flex pt-6 md:p-4 md:bg-brand-bright flex-col md:flex-row md:items-center   px-2">
       <div class="w-full pb-3 md:pb-0 flex items-center justify-between md:w-1/5">
         <p class="text-base">Площадь</p>
         <p class="text-brand-blue text-base block md:hidden">кв.м.</p>
@@ -123,7 +123,7 @@ const emit = defineEmits(['updateFilter']);
         <p class="text-brand-blue text-base hidden md:block">кв.м.</p>
       </div>
     </div>
-    <div class="category pt-6 md:p-4 flex flex-col md:flex-row md:items-center ">
+    <div class="category pt-6 md:p-4 flex flex-col md:flex-row md:items-center  px-2">
       <div class="w-1/5 pb-2 md:pb-0 ">
         <p class="text-base">Районы</p>
       </div>
@@ -138,7 +138,7 @@ const emit = defineEmits(['updateFilter']);
         </multiselect>
       </div>
     </div>
-    <div class="category pt-6 md:p-4 flex flex-col md:flex-row md:items-center md:bg-brand-bright">
+    <div class="category pt-6 md:p-4 flex flex-col md:flex-row md:items-center md:bg-brand-bright  px-2">
       <div class="w-1/5 pb-2 md:pb-0">
         <p class="text-base">Метро</p>
       </div>
@@ -147,7 +147,7 @@ const emit = defineEmits(['updateFilter']);
                      :allowEmpty="false" placeholder="Выбрать метро."></multiselect>
       </div>
     </div>
-    <div class="category  pt-6 md:p-4 flex flex-col md:flex-row md:items-center">
+    <div class="category  pt-6 md:p-4 flex flex-col md:flex-row md:items-center  px-2">
       <div class="md:w-1/5 pb-2 md:pb-0 w-full">
         <p class="text-base">Произвольный текст</p>
       </div>
@@ -172,3 +172,9 @@ const emit = defineEmits(['updateFilter']);
 </template>
 
 
+<style scoped>
+.filter {
+  box-shadow:0px 8px 6px 0px #00000026;
+
+}
+</style>
