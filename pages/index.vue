@@ -44,7 +44,7 @@
             <AppButton class="py-1  block md:hidden">
               <div class="flex items-center gap-3">
                 <p>Показать всё</p>
-                <img src="/img/icons/arrowright.png" alt="">
+                <img src="/img/icons/arrowright.svg" alt="">
               </div>
             </AppButton>
           </div>
@@ -55,7 +55,7 @@
               class="mySwiper"
               :breakpoints="{
 '0': {
-        slidesPerView: 1.5,
+        slidesPerView: 1.7,
         spaceBetween: 20,
       },
               '380': {
@@ -100,7 +100,7 @@
             <AppButton class="py-1  block md:hidden">
               <div class="flex items-center gap-3">
                 <p>Показать всё</p>
-                <img src="/img/icons/arrowright.png" alt="">
+                <img src="/img/icons/arrowright.svg" alt="">
               </div>
             </AppButton>
           </div>
@@ -111,7 +111,7 @@
               class="mySwiper"
               :breakpoints="{
                 '0': {
-        slidesPerView: 1.5,
+        slidesPerView: 1.7,
         spaceBetween: 20,
       },
               '380': {
@@ -313,14 +313,14 @@
       <div
           class=" bg-white mt-3 p-2 md:pb-6 md:pt-6 md:bg-transparent md:border-0 border border-custom-gray rounded-lg bg-(url('/img/aboutbg.png'))">
         <div class="flex items-center justify-between pb-3">
-          <h3 class="text-brand-grey md:text-2xl font-bold md:font-extrabold text-xl">НОВЫЕ ОБЪЕКТЫ</h3>
+          <h3 class="text-brand-grey md:text-2xl font-bold md:font-extrabold text-base">НОВЫЕ ОБЪЕКТЫ</h3>
           <AppButton class="hidden md:block">
             <p class="text-base">Добавить объект</p>
           </AppButton>
           <AppButton class="block md:hidden py-[3px] px-[10px] md:py-1 md:px-2">
             <div class="flex items-center gap-2">
               <p class="text-sm">Показать всё</p>
-              <img src="/img/icons/arrowright.png" alt="">
+              <img src="/img/icons/arrowright.svg" alt="">
             </div>
           </AppButton>
         </div>

@@ -68,21 +68,19 @@ const emit = defineEmits(['updateFilter']);
 <template>
   <div class="bg-white mt-3 border border-custom-gray rounded-lg w-full filter">
     <div class="relative block md:hidden">
-      <div class="absolute right-1 top-1">
+      <div class="absolute right-3 top-2">
         <button class="close" @click="emit('updateFilter')">
-          <svg fill="#000000" height="20" width="20" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-               xmlns:xlink="http://www.w3.org/1999/xlink"
-               viewBox="0 0 512 512" xml:space="preserve">
-            <g>
-              <g>
-                <polygon points="512,59.076 452.922,0 256,196.922 59.076,0 0,59.076 196.922,256 0,452.922 59.076,512 256,315.076 452.922,512
-                  512,452.922 315.076,256 		"/>
-              </g>
-            </g>
-            </svg>
+          <svg @click="search=''" class="block sm:hidden" width="20" height="20" viewBox="0 0 14 14" fill="none"
+               xmlns="http://www.w3.org/2000/svg">
+            <path d="M13 1L1 13" stroke="#8F8F8F" stroke-opacity="0.79" stroke-linecap="round"
+                  stroke-linejoin="round"/>
+            <path d="M1 1L13 13" stroke="#8F8F8F" stroke-opacity="0.79" stroke-linecap="round"
+                  stroke-linejoin="round"/>
+          </svg>
         </button>
       </div>
     </div>
+    <h3 class="px-2 pt-3 text-brand-blue text-base font-bold">ФИЛЬТР</h3>
     <div class="category flex pt-2 md:p-4 flex-col gap-2 md:flex-row md:items-center px-2">
       <div class="w-1/5">
         <p class="text-base">Категория</p>

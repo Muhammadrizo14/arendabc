@@ -19,7 +19,7 @@
         <h3 class="pb-1 text-xs md:text-base font-bold">ОСЗ, 1 930 кв.м</h3>
         <p class="text-[#999] text-[8px] md:text-xs pb-2 md:font-medium ">Василеостровский р-он</p>
         <div class="flex items-center gap-2 pb-1">
-          <img src="../public/img/object.png" alt="">
+          <img src="../public/img/object.svg" alt="">
           <p class="text-brand-blue text-xs md:text-sm md:font-semibold">122 000 кв.м.</p>
         </div>
         <p class="text-brand-green font-extrabold text-sm md:font-bold md:text-xl ">1,500,000,000 ₽</p>

@@ -60,15 +60,15 @@
         <div class="flex items-center py-3 md:py-0 w-full md:w-auto">
           <div @click="activeTab = 0" :class="activeTab === 0 ? 'bg-[#53B3F8] text-white' : 'bg-white text-black'"
                class="cursor-pointer p-1.5 px-4 rounded-l-lg w-full text-center md:w-auto">
-            <p>Карточки</p>
+            <p class="text-sm md:text-lg">Карточки</p>
           </div>
           <div @click="activeTab = 1" :class="activeTab === 1 ? 'bg-[#53B3F8] text-white' : 'bg-white text-black'"
                class="cursor-pointer p-1.5 px-4 w-full text-center md:w-auto">
-            <p>Карта</p>
+            <p class="text-sm md:text-lg">Карта</p>
           </div>
           <div @click="activeTab = 2" :class="activeTab === 2 ? 'bg-[#53B3F8] text-white' : 'bg-white text-black'"
                class="cursor-pointer p-1.5 px-4 rounded-r-lg w-full text-center md:w-auto">
-            <p>Карта+Карточки</p>
+            <p class="text-sm md:text-lg">Карта+Карточки</p>
           </div>
         </div>
         <multiselect class="light" v-model="value" :options="options" :allowEmpty="false" :searchable="false"
