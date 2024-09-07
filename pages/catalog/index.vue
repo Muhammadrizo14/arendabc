@@ -1,6 +1,6 @@
 <template>
   <div>
-    <offer class="py-6 max-[768px]:bg-none bg-brand-bright ">
+    <offer class="md:py-6 max-[768px]:bg-none bg-brand-bright ">
       <h3 class="text-white pb-6 hidden md:block">ПРОДАЖА НЕДВИЖИМОСТИ РЯДОМ С МЕТРО {*}</h3>
       <div class="bg-brand-blue rounded-md">
         <div class="bar py-1 px-3 md:p-3 bg-white rounded-md flex items-center gap-3 ">
@@ -20,7 +20,7 @@
 
           </AppButton>
           <div class="flex items-center w-full">
-            <input class="w-full py-3 outline-none h-full text-2xl text-center" type="text" placeholder="поиск"
+            <input class="w-full py-3 outline-none h-full md:text-2xl text-center" type="text" placeholder="поиск"
                    v-model="search">
             <svg @click="search=''" class="block sm:hidden" width="20" height="20" viewBox="0 0 14 14" fill="none"
                  xmlns="http://www.w3.org/2000/svg">
@@ -49,9 +49,10 @@
       </div>
 
       <!--pb-20 чтобы фильтр не съехал на навигацию-->
-      <div class="relative z-20 md:pb-0" :class="filter && 'pb-20'">
-        <Filter v-if="filter" class="absolute" @updateFilter="filter = false"/>
+      <div class="relative z-20">
+        <Filter v-if="filter" class="absolute" :class="filter === true && 'pb-20 md:pb-0'" @updateFilter="filter = false"/>
       </div>
+
     </offer>
 
     <section class="stats bg-brand-bright">
