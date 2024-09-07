@@ -1,3 +1,63 @@
+<script setup>
+  import AppButton from "../../components/AppButton";
+  import { Swiper, SwiperSlide } from "swiper/vue";
+  import { Fancybox } from '@fancyapps/ui';
+
+  import { FreeMode, Navigation, Thumbs } from "swiper/modules";
+
+  import "swiper/css";
+  import "swiper/css/free-mode";
+  import "swiper/css/navigation";
+  import "swiper/css/thumbs";
+
+  const modules = ref([FreeMode, Navigation, Thumbs]);
+
+  const phone = ref(false);
+  const email = ref(false);
+  const thumbsSwiper = ref(null);
+  const hideInfo = ref(true);
+
+  const mainSwiper = ref(null);
+
+  const slides = [
+    { src: '/img/carousel/4.jpg' },
+    { src: '/img/carousel/5.jpg' },
+    { src: '/img/carousel/6.jpg' },
+    { src: '/img/carousel/7.jpg' },
+    { src: '/img/carousel/7.jpg' },
+    { src: '/img/carousel/7.jpg' },
+  ];
+
+  const thumbs = [
+    { src: '/img/carousel/4.jpg' },
+    { src: '/img/carousel/5.jpg' },
+    { src: '/img/carousel/6.jpg' },
+    { src: '/img/carousel/7.jpg' },
+    { src: '/img/carousel/7.jpg' },
+    { src: '/img/carousel/7.jpg' },
+  ];
+
+const onSwiper = (swiper) => {
+  mainSwiper.value = swiper;
+};
+
+const goToSlide = (index) => {
+  if (mainSwiper.value) {
+    mainSwiper.value.slideTo(index);
+  }
+};
+
+onMounted(() => {
+  Fancybox.bind("[data-fancybox='gallery']", {
+    afterClose: () => {
+      if (mainSwiper.value) {
+        mainSwiper.value.update();
+      }
+    },
+  });
+});
+</script>
+
 <template>
   <div class="h-full bg-brand-bright">
     <offer>
@@ -31,69 +91,31 @@
     <section class="detail pt-6">
       <div class="container flex gap-6 flex-col md:flex-row">
         <div class="flex flex-col items-center w-2/2 md:w-3/5">
-          <!-- <client-only> -->
+          <client-only>
             <div class="flex items-stretch w-full h-full max-h-[600px] gap-3">
-              
-                <client-only>
-                  <div class="w-[15%] flex flex-col gap-2">
-                    <a href="/img/carousel/1.png" data-fancybox="gallery">
-                      <img src="/img/carousel/1.png" width="92" alt="" />
-                    </a>
-                    <a href="/img/detail/detailcard.png" data-fancybox="gallery">
-                      <img src="/img/carousel/2.png" width="92" alt="" />
-                    </a>
-                    <a href="/img/carousel/3.png" data-fancybox="gallery">
-                      <img src="/img/carousel/3.png" width="92" alt="" />
-                    </a>
-                  </div>
-                </client-only>
-                
-                
-                <!-- <img src="public/img/carousel/2.png" width="92" alt="" />
-                <img src="public/img/carousel/3.png" width="92" alt="" />
-                <img src="public/img/carousel/3.png" width="92" alt="" />
-                <img src="public/img/carousel/3.png" width="92" alt="" />
-                <img src="public/img/carousel/3.png" width="92" alt="" /> -->
-              <!-- </div> -->
+              <div class="w-[15%] flex flex-col gap-2">
+                <a v-for="(thumb, index) in thumbs" :key="index" @click="goToSlide(index)" class="rounded-xl flex-1 cursor-pointer flex">
+                  <img :src="thumb.src" alt="image" class="rounded-xl flex-1"/>
+                </a>
+              </div>
               <div class="w-[85%]">
-                <div class="relative z-30 hidden md:block">
-                  <div class="absolute flex gap-2 left-3 top-2 items-center">
-                    <div class="bg-brand-blue text-white px-2 py-1 rounded-lg">
-                      <span>A+</span>
-                    </div>
-                    <div class="bg-brand-green text-white px-2 py-1 rounded-lg">
-                      <span>Продажа</span>
-                    </div>
-                  </div>
-                </div>
-                
-                  <swiper
-                  :style="{
-                    '--swiper-navigation-color': '#fff',
-                    '--swiper-pagination-color': '#fff',
-                    'border-radius': '12px',
-                  }"
+                <swiper
+                  ref="mainSwiper"
                   :spaceBetween="10"
                   :navigation="true"
-                  :thumbs="{ swiper: thumbsSwiper }"
-                  :modules="modules"
+                  :modules="[Navigation, Thumbs]"
                   class="mySwiper2"
+                  @swiper="onSwiper"
                 >
-                  <swiper-slide>
-                    <img src="/img/carousel.png" alt="image" />
-                  </swiper-slide>
-                  <swiper-slide>
-                    <img src="/img/carousel.png" alt="image" />
-                  </swiper-slide>
-                  <swiper-slide>
-                    <img src="/img/carousel.png" alt="image" />
+                  <swiper-slide v-for="(slide, index) in slides" :key="index">
+                    <a :href="slide.src" data-fancybox="gallery">
+                      <img :src="slide.src" alt="image" class="rounded-xl cursor-pointer">
+                    </a>
                   </swiper-slide>
                 </swiper>
-               
-                
               </div>
             </div>
-          <!-- </client-only> -->
+          </client-only>
 
           <div
             class="py-6 px-3 bg-white border mt-3 rounded-lg text-brand-grey w-full"
@@ -319,24 +341,6 @@
   </div>
 </template>
 
-<script setup>
-import AppButton from "../../components/AppButton";
-import { Swiper, SwiperSlide } from "swiper/vue";
-
-import { FreeMode, Navigation, Thumbs } from "swiper/modules";
-
-import "swiper/css";
-import "swiper/css/free-mode";
-import "swiper/css/navigation";
-import "swiper/css/thumbs";
-
-const modules = ref([FreeMode, Navigation, Thumbs]);
-
-const phone = ref(false);
-const email = ref(false);
-const thumbsSwiper = ref(null);
-const hideInfo = ref(true);
-</script>
 
 <style scoped lang="scss">
 .swiper {
