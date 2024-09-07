@@ -1,18 +1,18 @@
 <template>
-  <header class="flex items-center container justify-between py-1 bg-brand-bright md:bg-white py-5 md:p-1">
+  <header class="flex items-center container justify-between py-1 bg-brand-bright md:bg-white py-5 md:py-1">
     <NuxtLink to="/"><img src="/img/logo.png" class="w-28 sm:w-56" alt="logo"></NuxtLink>
     <ul class="items-center gap-5 hidden lg:flex">
       <li class="p-3">
-        <NuxtLink to="/sale" class="font-medium " active-class="active-link">Продажа</NuxtLink>
+        <NuxtLink to="/sale" class="font-medium  text-brand-grey" active-class="active-link">Продажа</NuxtLink>
       </li>
       <li class="p-3">
-        <NuxtLink to="/rent" class="font-medium " active-class="active-link">Аренда</NuxtLink>
+        <NuxtLink to="/rent" class="font-medium  text-brand-grey" active-class="active-link">Аренда</NuxtLink>
       </li>
       <li class="p-3">
-        <NuxtLink to="/catalog" class="font-medium " active-class="active-link">Каталог</NuxtLink>
+        <NuxtLink to="/catalog" class="font-medium  text-brand-grey" active-class="active-link">Каталог</NuxtLink>
       </li>
       <li class="p-3">
-        <NuxtLink to="/saved" class="font-medium " active-class="active-link">Избранное</NuxtLink>
+        <NuxtLink to="/saved" class="font-medium  text-brand-grey" active-class="active-link">Избранное</NuxtLink>
       </li>
     </ul>
     <a href="tel:+7 (999) 999-99-99" class="text-brand-green font-bold sm:text-2xl text-base font-bold hidden lg:block">+7
@@ -25,34 +25,31 @@
     </div>
     <div class="mobile_menu block md:hidden bg-white border-r pl-3 fixed w-4/5 h-screen z-50 top-0 left-0"
          :class="menu ? 'translate-x-0' : '-translate-x-full'">
-      <div class="flex justify-between items-center pr-3">
-        <NuxtLink @click="menu=false" to="/"><img src="/img/logo.png" class="w-2/3 py-6" alt="logo"></NuxtLink>
+      <div class="flex justify-between items-center pr-3 py-6">
+        <NuxtLink @click="menu=false" to="/" class="w-2/3"><img src="/img/logo.png" class="f-full" alt="logo"></NuxtLink>
 
         <button class="close" @click="menu=false">
-          <svg fill="#000000" height="20" width="20" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-               xmlns:xlink="http://www.w3.org/1999/xlink"
-               viewBox="0 0 512 512" xml:space="preserve">
-            <g>
-              <g>
-                <polygon points="512,59.076 452.922,0 256,196.922 59.076,0 0,59.076 196.922,256 0,452.922 59.076,512 256,315.076 452.922,512
-                  512,452.922 315.076,256 		"/>
-              </g>
-            </g>
-            </svg>
+          <svg  width="20" height="20" viewBox="0 0 14 14" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+            <path d="M13 1L1 13" stroke="#8F8F8F" stroke-opacity="0.79" stroke-linecap="round"
+                  stroke-linejoin="round"/>
+            <path d="M1 1L13 13" stroke="#8F8F8F" stroke-opacity="0.79" stroke-linecap="round"
+                  stroke-linejoin="round"/>
+          </svg>
         </button>
       </div>
       <ul class="flex flex-col gap-5">
         <li @click="menu=false">
-          <NuxtLink to="/sale" class="font-medium " active-class="text-brand-blue">Продажа</NuxtLink>
+          <NuxtLink to="/sale" class="font-medium text-brand-grey" active-class="text-brand-blue">Продажа</NuxtLink>
         </li>
         <li @click="menu=false">
-          <NuxtLink to="/rent" class="font-medium " active-class="text-brand-blue">Аренда</NuxtLink>
+          <NuxtLink to="/rent" class="font-medium text-brand-grey" active-class="text-brand-blue">Аренда</NuxtLink>
         </li>
         <li @click="menu=false">
-          <NuxtLink to="/catalog" class="font-medium " active-class="text-brand-blue">Каталог</NuxtLink>
+          <NuxtLink to="/catalog" class="font-medium text-brand-grey" active-class="text-brand-blue">Каталог</NuxtLink>
         </li>
         <li @click="menu=false">
-          <NuxtLink to="/saved" class="font-medium " active-class="text-brand-blue">Избранное</NuxtLink>
+          <NuxtLink to="/saved" class="font-medium text-brand-grey" active-class="text-brand-blue">Избранное</NuxtLink>
         </li>
       </ul>
     </div>

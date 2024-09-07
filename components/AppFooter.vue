@@ -7,19 +7,19 @@
           <h3 class="text-xl pb-3">НАВИГАЦИЯ</h3>
           <ul>
             <li>
-              <a href="#" class="text-xl font-medium hover:underline hover:text-brand-blue">Главная</a>
+              <NuxtLink href="/" class="text-xl font-medium hover:underline hover:text-brand-blue">Главная</NuxtLink>
             </li>
             <li>
-              <a  class="text-xl font-medium hover:underline hover:text-brand-blue" href="#">Каталог</a>
+              <NuxtLink href="/catalog" class="text-xl font-medium hover:underline hover:text-brand-blue">Каталог</NuxtLink>
             </li>
             <li>
-              <a  class="text-xl font-medium hover:underline hover:text-brand-blue" href="#">Новости</a>
+              <NuxtLink href="/" class="text-xl font-medium hover:underline hover:text-brand-blue">Новости</NuxtLink>
             </li>
             <li>
-              <a  class="text-xl font-medium hover:underline hover:text-brand-blue" href="#">О сервисе</a>
+              <NuxtLink href="/" class="text-xl font-medium hover:underline hover:text-brand-blue">О сервисе</NuxtLink>
             </li>
             <li>
-              <a  class="text-xl font-medium hover:underline hover:text-brand-blue" href="#">Контакты</a>
+              <NuxtLink href="/" class="text-xl font-medium hover:underline hover:text-brand-blue">Контакты</NuxtLink>
             </li>
 
           </ul>

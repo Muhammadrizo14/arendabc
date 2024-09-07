@@ -105,16 +105,24 @@ button {
   font-size: 16px;
 }
 
+input {
+  color: #4B4B4B;
+}
+
 a {
   font-size: 24px;
 }
 
+.multiselect__single{
+  color: #4B4B4B;
+}
 
 @media (max-width: 600px) {
   p {
     font-size: 16px;
   }
 }
+
 
 
 .multiselect.bright {
@@ -128,13 +136,13 @@ a {
   }
 }
 .multiselect.bright > .multiselect__tags {
-  background: #f5f5f5;
+  background: #EBEDF0;
 }
 .multiselect.bright > .multiselect__tags .multiselect__single {
-  background: #f5f5f5;
+  background: #EBEDF0;
 }
 .multiselect.bright > .multiselect__tags .multiselect__input {
-  background: #f5f5f5;
+  background: #EBEDF0;
 }
 .multiselect__option--highlight {
   background: #00b6f4 !important;

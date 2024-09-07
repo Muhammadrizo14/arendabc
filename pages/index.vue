@@ -34,14 +34,14 @@
             <p class="text-base md:text-xl">Поиск</p>
           </AppButton>
         </div>
-        <div class="relative z-20">
-          <Filter v-if="filter" class="absolute" @updateFilter="filter = false"/>
+        <div class="relative z-20 w-full">
+          <Filter v-if="filter" class="absolute w-full" @updateFilter="filter = false"/>
         </div>
         <div
-            class="bg-white mt-3 py-2 p-2 md:p-0 md:pb-6 md:pt-6 md:bg-transparent md:border-0 border border-custom-gray rounded-lg">
+            class="bg-white mt-3 py-2  p-2.5  md:p-0 md:pb-6 md:pt-6 md:bg-transparent md:border-0 border border-custom-gray rounded-lg">
           <div class="flex items-center justify-between pl-2 pb-3">
             <h3 class="text-black text-base md:text-white">ПРОДАЖА</h3>
-            <AppButton class="py-1  block md:hidden">
+            <AppButton class=" py-[3px] px-[10px] md:py-1 md:px-2  block md:hidden">
               <div class="flex items-center gap-3">
                 <p>Показать всё</p>
                 <img src="/img/icons/arrowright.svg" alt="">
@@ -94,10 +94,10 @@
           </swiper>
         </div>
         <div
-            class="bg-white mt-3 p-2 md:p-0 py-2  pl-2 md:pb-6 md:pt-6 md:bg-transparent md:border-0 border border-custom-gray rounded-lg">
+            class="bg-white mt-3 p-2 md:p-0 p-2.5   pl-2 md:pb-6 md:pt-6 md:bg-transparent md:border-0 border border-custom-gray rounded-lg">
           <div class="flex items-center justify-between pb-3">
             <h3 class="text-black text-base md:text-white">АРЕНДА</h3>
-            <AppButton class="py-1  block md:hidden">
+            <AppButton class=" py-[3px] px-[10px] md:py-1 md:px-2  block md:hidden">
               <div class="flex items-center gap-3">
                 <p>Показать всё</p>
                 <img src="/img/icons/arrowright.svg" alt="">
@@ -151,9 +151,9 @@
         </div>
       </div>
     </offer>
-    <section class="location container py-3 md:py-6 md:bg-[url('img/map.png')] bg-cover bg-no-repeat">
+    <section class="location container p-6 md:py-6 md:bg-[url('img/map.png')] bg-cover bg-no-repeat">
       <div
-          class="metro bg-white mt-3 p-2 md:p-0 py-2 md:pb-6 md:pt-6 md:bg-transparent md:border-0 border border-custom-gray rounded-lg">
+          class="metro bg-white mt-3 p-2.5 md:p-0 py-2 md:pb-6 md:pt-6 md:bg-transparent md:border-0 border border-custom-gray rounded-lg">
         <h3 class="pb-3 text-base">РЯДОМ С <span>МЕТРО</span></h3>
         <div class="grid-cols-4 items-start pb-3 hidden md:grid gap-y-2 ">
           <div class="flex flex-col gap-2">
@@ -285,7 +285,7 @@
       <div class="container rounded flex items-center gap-6">
         <img class="hidden lg:block" src="../public/img/about.png" alt="">
         <div
-            class="mt-3 p-2 md:pb-6 md:pt-6 md:bg-transparent md:border-0 border border-custom-gray rounded-lg max-[1024px]:bg-[url('/public/img/aboutbg.png')] bg-cover bg-white">
+            class="mt-3  p-2.5  md:pb-6 md:pt-6 md:bg-transparent md:border-0 border border-custom-gray rounded-lg max-[1024px]:bg-[url('/public/img/aboutbg.png')] bg-cover bg-white">
           <h2 class="pb-3 text-brand-grey text-3xl text-xl md:text-3xl">Аренда коммерческой недвижимости на
             <span>ARENDA</span><span
                 class="text-brand-green">BC</span></h2>
@@ -311,7 +311,7 @@
 
     <section class="container">
       <div
-          class=" bg-white mt-3 p-2 md:pb-6 md:pt-6 md:bg-transparent md:border-0 border border-custom-gray rounded-lg bg-(url('/img/aboutbg.png'))">
+          class=" bg-white mt-3  p-2.5  md:pb-6 md:pt-6 md:bg-transparent md:border-0 border border-custom-gray rounded-lg bg-(url('/img/aboutbg.png'))">
         <div class="flex items-center justify-between pb-3">
           <h3 class="text-brand-grey md:text-2xl font-bold md:font-extrabold text-base">НОВЫЕ ОБЪЕКТЫ</h3>
           <AppButton class="hidden md:block">

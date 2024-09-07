@@ -82,11 +82,12 @@ const emit = defineEmits(['updateFilter']);
       </div>
       <div class="category flex pt-2 md:p-4 flex-col gap-2 md:flex-row md:items-center px-2">
         <div class="w-1/5">
-          <p class="text-base">Категория</p>
+          <p class="text-base text-brand-grey">Категория</p>
         </div>
-        <div class="flex items-center w-4/5">
+        <div class="flex items-center w-5/5 md:w-4/5">
           <div @click="active_tab=0" :class="active_tab === 0 ? 'bg-brand-blue text-white' : 'text-brand-blue'"
-               class="cursor-pointer py-px  px-4 md:py-1 lg:px-6  border border-brand-blue  rounded-l-lg">Все
+               class="cursor-pointer py-px  px-4 md:py-1 lg:px-6  border border-brand-blue  rounded-l-lg">
+            Все
           </div>
           <div @click="active_tab=1" :class="active_tab === 1 ? 'bg-brand-blue text-white' : 'text-brand-blue'"
                class="cursor-pointer py-px  px-4 md:py-1 lg:px-4 text-brand-blue border border-brand-blue">Аренда
@@ -99,7 +100,7 @@ const emit = defineEmits(['updateFilter']);
       </div>
       <div class="category flex  pt-6 md:p-4 flex-col gap-2 md:flex-row md:items-center md:bg-brand-bright  px-2">
         <div class="w-1/5">
-          <p class="text-base">Тип</p>
+          <p class="text-base text-brand-grey">Тип</p>
         </div>
         <div class="flex items-center gap-2 w-5/5 md:w-4/5">
           <OfferCard class="hidden md:flex !h-[169px] min-h-fit text-xs" v-for="(home, index) in rent" :key="index"
@@ -122,29 +123,29 @@ const emit = defineEmits(['updateFilter']);
       </div>
       <div class="category flex pt-6 md:p-4 flex-col md:flex-row md:items-center px-2">
         <div class="w-full pb-3 md:pb-0 flex items-center justify-between md:w-1/5">
-          <p class="text-base">Цена</p>
+          <p class="text-base text-brand-grey">Цена</p>
           <p class="text-brand-blue text-base md:hidden block">{всё/кв.м.}</p>
         </div>
         <div class="flex items-center gap-2 w-5/5 md:w-4/5">
-          <input type="number" placeholder="от" class="bg-brand-input p-2 rounded md:w-fit w-1/2">
-          <input type="number" placeholder="до" class="bg-brand-input p-2 rounded md:w-fit w-1/2">
+          <input type="number" placeholder="от" class="bg-brand-input p-2 rounded md:w-[146px] w-1/2">
+          <input type="number" placeholder="до" class="bg-brand-input p-2 rounded md:w-[146px] w-1/2">
           <p class="text-brand-blue text-base md:block hidden">{всё/кв.м.}</p>
         </div>
       </div>
       <div class="category flex pt-6 md:p-4 md:bg-brand-bright flex-col md:flex-row md:items-center   px-2">
         <div class="w-full pb-3 md:pb-0 flex items-center justify-between md:w-1/5">
-          <p class="text-base">Площадь</p>
+          <p class="text-base text-brand-grey">Площадь</p>
           <p class="text-brand-blue text-base block md:hidden">кв.м.</p>
         </div>
         <div class="flex items-center gap-2 w-5/5 md:w-4/5">
-          <input type="number" placeholder="от" class="bg-brand-input p-2 rounded md:w-fit w-1/2">
-          <input type="number" placeholder="до" class="bg-brand-input p-2 rounded md:w-fit w-1/2">
+          <input type="number" placeholder="от" class="bg-brand-input p-2 rounded md:w-[146px] w-1/2">
+          <input type="number" placeholder="до" class="bg-brand-input p-2 rounded md:w-[146px] w-1/2">
           <p class="text-brand-blue text-base hidden md:block">кв.м.</p>
         </div>
       </div>
       <div class="category pt-6 md:p-4 flex flex-col md:flex-row md:items-center  px-2">
         <div class="w-1/5 pb-2 md:pb-0 ">
-          <p class="text-base">Районы</p>
+          <p class="text-base text-brand-grey">Районы</p>
         </div>
         <div class="flex items-center gap-2 w-5/5 md:w-4/5">
           <multiselect class="bright" v-model="selectedArea" :searchable="false" :show-labels="false" :options="areas"
@@ -159,7 +160,7 @@ const emit = defineEmits(['updateFilter']);
       </div>
       <div class="category pt-6 md:p-4 flex flex-col md:flex-row md:items-center md:bg-brand-bright  px-2">
         <div class="w-1/5 pb-2 md:pb-0">
-          <p class="text-base">Метро</p>
+          <p class="text-base text-brand-grey">Метро</p>
         </div>
         <div class="flex items-center gap-2 w-5/5 md:w-4/5">
           <multiselect class="bright" v-model="selectedMetro" :show-labels="false" :searchable="false" :options="metros"
@@ -168,7 +169,7 @@ const emit = defineEmits(['updateFilter']);
       </div>
       <div class="category  pt-6 md:p-4 flex flex-col md:flex-row md:items-center  px-2">
         <div class="md:w-1/5 pb-2 md:pb-0 w-full">
-          <p class="text-base">Произвольный текст</p>
+          <p class="text-base text-brand-grey">Произвольный текст</p>
         </div>
         <div class="flex items-center gap-2 w-5/5 md:w-4/5">
           <input type="text" placeholder="поиск" class="bg-brand-input p-2 rounded w-full md:w-[304px]">
@@ -182,7 +183,8 @@ const emit = defineEmits(['updateFilter']);
           <AppButton class="md:py-1 sm:px-5" @click="emit('updateFilter')">
             Применить
           </AppButton>
-          <AppButton class="min-[0px]:bg-brand-input min-[0px]:text-black md:py-1 sm:px-5" @click="emit('updateFilter')">
+          <AppButton class="min-[0px]:bg-brand-input min-[0px]:text-brand-grey md:py-1 sm:px-5"
+                     @click="emit('updateFilter')">
             Сбросить
           </AppButton>
         </div>

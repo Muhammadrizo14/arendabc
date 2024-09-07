@@ -87,7 +87,7 @@
           <card/>
         </div>
         <div v-if="activeTab === 2" class="card__map flex items-stretch gap-6 flex-col lg:flex-row">
-          <div class="grid grid-cols-2 w-5/5 md:grid-cols-2 lg:w-3/5 lg:grid-cols-2 gap-3 xl:w-1/2">
+          <div class="grid grid-cols-2 w-5/5 md:grid-cols-2 lg:w-3/5 lg:grid-cols-2 gap-1 xl:w-1/2">
             <card/>
             <card/>
             <card/>
