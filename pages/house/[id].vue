@@ -118,7 +118,7 @@ onMounted(() => {
           </client-only>
 
           <div
-            class="py-6 px-3 bg-white border mt-3 rounded-lg text-brand-grey w-full"
+            class="py-6 px-3 bg-white border mt-3 rounded-lg text-brand-grey w-full mt-4"
           >
             <h3 class="text-lg md:text-xl">
               <span class="underline">АРЕНДА</span> ОТДЕЛЬНО СТОЯЩЕГО ЗДАНИЯ,
@@ -157,14 +157,14 @@ onMounted(() => {
               <p>Бухарестская</p>
               <p>17 мин.</p>
             </div>
-            <p class="py-3 font-light w-full">
+            <p class="py-3 font-light w-full text-[20px] font-light leading-[26px] ">
               Предлагаем Вашему вниманию объект коммерческой недвижимости общей
               площадью более 22000 м2. Здание расположено на земельном участке
               площадью 5 Га, который имеет категорию земель населенных пунктов и
               предназначен для размещения объектов розничной торговли.
             </p>
             <p
-              class="py-3 font-light w-full"
+              class="py-3 font-light w-full text-[20px] font-light leading-[26px] "
               :class="hideInfo && 'max-[768px]:hidden'"
             >
               Объект обеспечен всеми необходимыми коммуникациями, включая
@@ -264,7 +264,7 @@ onMounted(() => {
                   </p>
                 </div>
               </div>
-              <div class="flex items-center gap-8">
+              <div class="flex items-center gap-8 pt-2">
                 <div class="flex items-center gap-2 w-1/3">
                   <img src="/public/img/icons/email.svg" alt="" />
 
