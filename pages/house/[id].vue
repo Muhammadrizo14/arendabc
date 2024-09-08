@@ -89,7 +89,7 @@ onMounted(() => {
       </div>
     </offer>
     <section class="detail pt-6">
-      <div class="container flex gap-6 flex-col md:flex-row">
+      <div class="container flex md:gap-6 gap-3.5 flex-col md:flex-row">
         <div class="flex flex-col items-center w-2/2 md:w-3/5">
           <client-only>
             <div class="flex items-stretch w-full h-full max-h-[600px] gap-3">
@@ -118,9 +118,9 @@ onMounted(() => {
           </client-only>
 
           <div
-            class="py-6 px-3 bg-white border mt-3 rounded-lg text-brand-grey w-full mt-4"
+            class="py-6 pt-3 px-3 bg-white border mt-3 rounded-lg text-brand-grey w-full mt-4"
           >
-            <h3 class="text-lg md:text-xl">
+            <h3 class="text-base md:text-xl">
               <span class="underline">АРЕНДА</span> ОТДЕЛЬНО СТОЯЩЕГО ЗДАНИЯ,
               <span class="text-brand-green underline">1280 КВ.М.</span>
             </h3>
@@ -138,7 +138,7 @@ onMounted(() => {
                   fill="#E73235"
                 />
               </svg>
-              <p>Балтийская</p>
+              <p class="max-[768px]:font-bold md:font-medium">Балтийская</p>
               <p>5 мин.</p>
             </div>
             <div class="flex items-center gap-3">
@@ -154,17 +154,17 @@ onMounted(() => {
                   fill="#702785"
                 />
               </svg>
-              <p>Бухарестская</p>
+              <p class="max-[768px]:font-bold md:font-medium">Бухарестская</p>
               <p>17 мин.</p>
             </div>
-            <p class="py-3 font-light w-full text-[20px] font-light leading-[26px] ">
+            <p class="py-3 font-light w-full text-base md:text-[20px] font-light md:leading-[26px] ">
               Предлагаем Вашему вниманию объект коммерческой недвижимости общей
               площадью более 22000 м2. Здание расположено на земельном участке
               площадью 5 Га, который имеет категорию земель населенных пунктов и
               предназначен для размещения объектов розничной торговли.
             </p>
             <p
-              class="py-3 font-light w-full text-[20px] font-light leading-[26px] "
+              class="py-3 font-light w-full text-base md:text-[20px] font-light md:leading-[26px] "
               :class="hideInfo && 'max-[768px]:hidden'"
             >
               Объект обеспечен всеми необходимыми коммуникациями, включая
@@ -192,8 +192,8 @@ onMounted(() => {
         </div>
         <div class="flex flex-col-reverse md:flex-col w-2/2 md:w-2/5">
           <div class="items-center justify-between pt-5 flex md:hidden">
-            <p class="text-base">№ 1234568</p>
-            <p class="text-base text-brand-blue">ОБНОВЛЕНО 23.09.2024</p>
+            <p class="text-[13px] font-medium">№ 1234568</p>
+            <p class="text-[13px] font-medium text-brand-blue">ОБНОВЛЕНО 23.09.2024</p>
           </div>
           <div class="relative h-[500px] md:h-[600px] pt-3 md:pt-0 rounded-lg">
             <iframe
@@ -201,7 +201,7 @@ onMounted(() => {
               class="w-full h-full absolute rounded-lg"
               frameborder="0"
             ></iframe>
-            <div class="absolute md:bottom-0 w-full bottom-[-10px]">
+            <div class="absolute md:bottom-0 w-full bottom-[-10px] ">
               <button
                 class="flex items-center justify-center mb-6 bg-brand-blue text-white py-2 px-3 rounded gap-2 w-fit mx-auto font-medium"
               >
@@ -209,21 +209,21 @@ onMounted(() => {
                 Панорама
               </button>
               <div
-                class="w-full h-24 flex items-center gap-6 bg-[#D6D6D680] pl-4 rounded-lg"
+                class="w-full md:h-24 h-[71px] flex items-center gap-6 bg-[#D6D6D680] pl-4 rounded-lg border border-[#BADB82]"
               >
-                <img src="/public/img/icons/location.svg" alt="" />
+                <img src="/public/img/icons/location.svg" class="w-[24px] md:w-[33px]" alt="" />
                 <div>
-                  <h1 class="text-xl text-[#E73235] font-bold">
+                  <h1 class=" text-base md:text-xl text-[#E73235] font-bold">
                     Санкт-Петербург,
                   </h1>
-                  <p class="text-xl font-normal">Московскийр-онПулковское ш</p>
+                  <p class="text-base md:text-xl font-normal">Московскийр-онПулковское ш</p>
                 </div>
               </div>
             </div>
           </div>
-          <div class="flex flex-col gap-5 pt-4">
-            <div class="py-6 px-3 bg-white border rounded-lg">
-              <h3 class="pb-3 font-bold text-base md:text-lg">ЦЕНА</h3>
+          <div class="flex flex-col gap-5 md:pt-4">
+            <div class="pt-3.5 pb-[30px] px-5 bg-white border rounded-lg">
+              <h3 class="pb-3 font-bold text-base md:text-lg text-brand-grey">ЦЕНА</h3>
 
               <div class="flex items-center justify-between">
                 <p class="font-medium">1 988 ₽</p>
@@ -238,7 +238,7 @@ onMounted(() => {
                 <p class="text-brand-grey">в год</p>
               </div>
             </div>
-            <div class="py-6 px-3 bg-white border rounded-lg">
+            <div class="pt-3.5 pb-[30px] px-5 bg-white border rounded-lg">
               <h3 class="text-brand-blue font-bold text-base md:text-lg">
                 ПО ВОПРОСУ АРЕНДЫ
               </h3>
@@ -287,7 +287,7 @@ onMounted(() => {
                 </div>
               </div>
             </div>
-            <div class="py-6 px-3 bg-white border rounded-lg">
+            <div class="pt-3.5 pb-[30px] px-5 bg-white border rounded-lg">
               <h3 class="font-bold text-base md:text-lg">ДОПОЛНИТЕЛЬНО</h3>
 
               <div class="flex items-center gap-8 pt-3">

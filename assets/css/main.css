@@ -167,7 +167,7 @@ a {
 
   }
 
-  .multiselect__single, .multiselect__option {
+  .multiselect.light > * .multiselect__single, .multiselect.light > * .multiselect__option {
     font-size: 10px !important;
   }
 
