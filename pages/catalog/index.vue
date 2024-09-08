@@ -57,7 +57,7 @@
 
     <section class="stats bg-brand-bright">
       <div class="container flex items-center justify-between py-2">
-        <h3 class="text-[13px] md:text-xl">НАЙДЕНО <span>245 ОБЪЕКТОВ</span></h3>
+        <h3 class="text-[13px] md:text-xl text-brand-grey">НАЙДЕНО <span>245 ОБЪЕКТОВ</span></h3>
         <div class="items-center py-3 md:py-0 w-full md:w-auto hidden md:flex">
           <div @click="activeTab = 0" :class="activeTab === 0 ? 'bg-[#53B3F8] text-white' : 'bg-white text-black'"
                class="cursor-pointer p-1.5 px-4 rounded-l-lg w-full text-center md:w-auto">
