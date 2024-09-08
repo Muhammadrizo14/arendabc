@@ -76,13 +76,13 @@ onMounted(() => {
           <button
             class="bg-red-500 flex items-center w-1/2 justify-center md:px-4 py-2 text-white gap-2 rounded md:w-auto"
           >
-            <img src="/public/img/icons/pdf.svg" alt="" />
+            <img src="/img/icons/pdf.svg" alt="" />
             Скачать PDF
           </button>
           <button
             class="bg-brand-blue flex items-center px-6 md:px-4 py-2 text-white gap-2 rounded w-1/2 justify-center md:w-auto"
           >
-            <img src="/public/img/icons/start.svg" alt="" />
+            <img src="/img/icons/start.svg" alt="" />
             Избранное
           </button>
         </div>

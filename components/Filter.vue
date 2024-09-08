@@ -68,10 +68,10 @@ const emit = defineEmits(['updateFilter']);
 <template>
   <div>
     <div class="bg-white mt-3 border border-custom-gray rounded-lg w-full filter">
-      <div class="flex items-center justify-between px-2 pt-3 md:p-4">
+      <div class="flex items-center justify-between px-2 pt-3 md:p-4 block sm:hidden">
         <h3 class="text-brand-blue text-base font-bold">ФИЛЬТР</h3>
         <button class="close" @click="emit('updateFilter')">
-          <svg @click="search=''" class="block sm:hidden" width="20" height="20" viewBox="0 0 14 14" fill="none"
+          <svg @click="search=''" width="20" height="20" viewBox="0 0 14 14" fill="none"
                xmlns="http://www.w3.org/2000/svg">
             <path d="M13 1L1 13" stroke="#8F8F8F" stroke-opacity="0.79" stroke-linecap="round"
                   stroke-linejoin="round"/>

@@ -158,13 +158,30 @@ a {
 }
 @media (max-width: 768px) {
   .multiselect.light {
-    width: 100%;
+    width: 140px;
+    min-height: 28px !important;
+  }
+
+  .multiselect.light > .multiselect__select {
+    height: 100% !important;
+
+  }
+
+  .multiselect__single, .multiselect__option {
+    font-size: 10px !important;
+  }
+
+
+  .multiselect.light .multiselect__tags {
+    border: 0;
+    padding-right: 30px;
+    min-height: 100% !important;
   }
 }
 .multiselect.light__tags {
   background: #fff;
 }
-.multiselect.light__tags .multiselect__single {
+.multiselect.light > .multiselect__single {
   background: #fff;
 }
 .multiselect.light__tags .multiselect__input {
