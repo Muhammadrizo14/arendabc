@@ -221,8 +221,8 @@ onMounted(() => {
               </div>
             </div>
           </div>
-          <div class="flex flex-col gap-5 md:pt-4">
-            <div class="pt-3.5 pb-[30px] px-5 bg-white border rounded-lg">
+          <div class="flex flex-col md:gap-5 gap-3.5 md:pt-4">
+            <div class="md:pt-3.5  md:pb-[30px] md:px-5 p-3.5 bg-white border rounded-lg">
               <h3 class="pb-3 font-bold text-base md:text-lg text-brand-grey">ЦЕНА</h3>
 
               <div class="flex items-center justify-between">
@@ -238,7 +238,7 @@ onMounted(() => {
                 <p class="text-brand-grey">в год</p>
               </div>
             </div>
-            <div class="pt-3.5 pb-[30px] px-5 bg-white border rounded-lg">
+            <div class="md:pt-3.5  md:pb-[30px] md:px-5 p-3.5 bg-white border rounded-lg">
               <h3 class="text-brand-blue font-bold text-base md:text-lg">
                 ПО ВОПРОСУ АРЕНДЫ
               </h3>
@@ -287,7 +287,7 @@ onMounted(() => {
                 </div>
               </div>
             </div>
-            <div class="pt-3.5 pb-[30px] px-5 bg-white border rounded-lg">
+            <div class="md:pt-3.5  md:pb-[30px] md:px-5 p-3.5 bg-white border rounded-lg">
               <h3 class="font-bold text-base md:text-lg">ДОПОЛНИТЕЛЬНО</h3>
 
               <div class="flex items-center gap-8 pt-3">

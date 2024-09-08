@@ -175,15 +175,15 @@ const emit = defineEmits(['updateFilter']);
           <input type="text" placeholder="поиск" class="bg-brand-input p-2 rounded w-full md:w-[304px]">
         </div>
       </div>
-      <div class="w-full bg-brand-input h-px my-2"></div>
-      <div class="category flex items-center p-4">
+      <div class="w-full bg-brand-input h-px md:my-2 my-3 w-[95%] mx-auto"></div>
+      <div class="category flex items-center md:p-4 px-2 py-3 pt-0 md:pt-4">
         <div class="md:w-1/5">
         </div>
         <div class="flex items-center gap-2 w-full md:w-4/5 justify-between md:justify-start">
-          <AppButton class="md:py-1 sm:px-5" @click="emit('updateFilter')">
+          <AppButton class="md:py-1 sm:px-5 max-[768px]:py-1 max-[768px]:px-4" @click="emit('updateFilter')">
             Применить
           </AppButton>
-          <AppButton class="min-[0px]:bg-brand-input min-[0px]:text-brand-grey md:py-1 sm:px-5"
+          <AppButton class="min-[0px]:bg-brand-input min-[0px]:text-brand-grey md:py-1 sm:px-5 max-[768px]:py-1 max-[768px]:px-6"
                      @click="emit('updateFilter')">
             Сбросить
           </AppButton>
